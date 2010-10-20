@@ -1,0 +1,117 @@
+html { 
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+body{
+	background-color: #FAFAD2;
+	padding:1%;
+}
+#header {
+	text-decoration:none;
+	border: 0.1em solid black;
+	background: #C4C4C4;}	
+
+#bodybox {
+	height:100%;
+	border: 0.1em solid black;
+	background: #DEDEDE;	
+	padding:1%;
+	}
+
+#header h1 {
+		text-align: center;
+	}
+
+.menu ul {
+ 	
+	list-style-type: none;
+}
+.menu li {
+	display:inline;
+}
+.menu a {
+	width: 4%;
+	text-decoration: none;
+	color:white;
+	font-weight:bold;
+	background:#00008B;
+	padding:0.5%;
+	padding-left:1%;
+	padding-right:1%;
+	padding-bottom:1%;
+	font-size:95%;
+	
+}
+.menu a:hover
+{
+	background:black;
+}
+#tabell2
+{
+text-align:center;
+position:relative;
+
+border:0.2em solid black;
+}
+#tabell2 tr
+{
+border:0.1em solid black;
+}
+#tabell2 td
+{
+border:0.1em solid black;
+}
+#tabell
+{
+text-align:center;
+position:relative;
+left:28%;
+right:-28%;
+border:0.2em solid black;
+}
+#tabell tr
+{
+border:0.1em solid black;
+}
+#tabell td
+{
+border:0.1em solid black;
+}
+.footer
+{
+text-align:center;
+font-family:arial;
+font-size:70%;
+}
+.liste
+{
+list-style-type:circle;
+}
+.bildetekst
+{
+position:absolute;
+right:40%;
+}
+#dan {
+	width: 10%;
+	
+	float:right;
+}
+
+#alexander {
+	width: 10%;
+	
+	float:left;
+}
+		
+#barbro {
+	width: 10%;
+	
+	float:left;
+}
+#marius {
+	width: 10%;
+	
+	float:right;
+}

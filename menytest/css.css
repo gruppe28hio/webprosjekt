@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+input.meny 
+{
+border-style: solid;
+border-right-width: thick;
+border-bottom-width:thick;
+background: white;
+color: blue;
+}
+
+input.nedremeny
+{
+border-style: solid;
+background: white;
+color: black;
+border-right-width: thick;
+border-top-width:thick;
+}

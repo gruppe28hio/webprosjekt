@@ -1,19 +1,13 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<meta name="description" content="Hovedside - reiseside."/>
-	<meta name="author" content="Barbro M. Klashaugen, Marius Karlsen, Dan Eig, Alexander Paulsen"/>
-	<link rel="stylesheet" href="css1.css"/>
-	
-
-	<title>Pakketurer</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Meny</title>
+</style>
+<link href="css.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-<div class="bodybox">
-<div class="menybox">
-<p>mens her er menyen</p>
+
 <table>
 <form action="" method="get">
 <tr>
@@ -91,10 +85,6 @@ if (isset($_REQUEST["fotball"]))
 ?>
 
 </table>
-</div>
-<p>Her står det masse om oss og bilder og tilbud etc.</p>
-</div>
-
 
 </body>
 </html>

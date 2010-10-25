@@ -1,0 +1,64 @@
+.menybox
+{
+    height:7em;
+	border: 0.1em solid black;
+	background: #DEDEDE;	
+	margin-top: -2%;
+	margin-right: -1.5%;
+	margin-left: -1.5%;
+    
+    
+    text-align: center; 
+ 
+}
+h1
+{
+    color: fuchsia;
+}
+#overskrift
+{
+    font-size: 200%;
+    text-align: center;
+    margin-top: -4.5%;
+}
+.bodybox
+{
+  height:70em;
+	border: 0.1em solid black;
+	background: #DEDEDE;	
+	padding:1%;
+    width: 80%;
+    text-align: center; 
+    margin-left: 10%;
+    margin-right: 30%; 
+}
+input.meny 
+{
+border-style: solid;
+border-right-width: thick;
+border-bottom-width:thick;
+background: white;
+color: blue;
+width:100%;
+text-align: center;
+
+}
+
+input.nedremeny
+{
+border-style: solid;
+background: white;
+color: black;
+border-right-width: thick;
+border-top-width:thick;
+width: 100%;
+}
+#menytabell
+{
+position: absolute;
+left: 38%;
+top: 13%;
+text-align: center;
+
+
+}

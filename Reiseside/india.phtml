@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
 	<meta name="description" content="Hovedside - reiseside."/>
 	<meta name="author" content="Barbro M. Klashaugen, Marius Karlsen, Dan Eig, Alexander Paulsen"/>
 	<link rel="stylesheet" href="css1.css"/>
@@ -31,7 +31,7 @@
 
 if (isset($_REQUEST["back"]))
 {
-	include "nedremeny/back.php";
+	include "nedremeny/back.phtml";
 /*if (isset($_REQUEST["back"]))
 {
 	
@@ -40,15 +40,15 @@ if (isset($_REQUEST["back"]))
 
 if (isset($_REQUEST["surf"]))
 {
-	include "nedremeny/surf.php";
+	include "nedremeny/surf.phtml";
 }
 if (isset($_REQUEST["ski"]))
 {
-	include "nedremeny/ski.php";
+	include "nedremeny/ski.phtml";
 }
 if (isset($_REQUEST["fotball"]))
 {
-	include "nedremeny/fotball.php";
+	include "nedremeny/fotball.phtml";
 }
 ?>
 </table>

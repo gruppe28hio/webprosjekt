@@ -80,7 +80,7 @@ left: 38%;
 right: 38%;
 margin-top: -3%;
 text-align: center;
-padding-bottom: 10%;
+
 }
 body
 {
@@ -90,6 +90,20 @@ body
 
 #Berlin
 {
-    
+margin-right: 60%;
+margin-top: 5%;
+height: 15%;
+width: 20%;
+float: left;
     
 }
+
+#Bali
+{
+float: right;
+margin-right: 20%;
+
+height: 20%;
+width: 17%;
+}
+

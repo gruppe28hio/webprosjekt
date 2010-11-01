@@ -22,15 +22,11 @@
 
 <div class="bodybox">
 <div class="menybox">
-
-<div id="overskrift">
-<h1>Pakketurer.com</h1>
-</div>
-</div>
+<h1 id="overskrift">Pakketurer.com</h1>
 <table id="menytabell">
 <form action="" method="get">
 <tr>
-<td><input class="meny" type="submit" value="Backpacking" name="back"/></td>
+<td><input class="meny" type="submit" value="  Fisketur  " name="fisk"/></td>
 <td><input class="meny" type="submit" value="   Surfing   " name="surf"/></td>
 <td><input class="meny" type="submit" value="  Skiferie  " name="ski"/></td>
 <td><input class="meny" type="submit" value="Fotballtur " name="fotball"/></td>
@@ -40,13 +36,10 @@
 
 <?php
 
-if (isset($_REQUEST["back"]))
+if (isset($_REQUEST["fisk"]))
 {
-	include "nedremeny/back.phtml";
-/*if (isset($_REQUEST["back"]))
-{
-	
-}*/
+	include "nedremeny/fisk.phtml";
+
 }
 
 if (isset($_REQUEST["surf"]))
@@ -63,12 +56,18 @@ if (isset($_REQUEST["fotball"]))
 }
 ?>
 </table>
+</div>
+
+
+
+
+
+
 <img id="Bali" src="bali.jpg" alt="Bali"   /> 
 <img id="Berlin"  src="berlin.jpg" alt="Berlin"  />
 
-
-
 <p>Her står det masse om oss og bilder og tilbud etc.</p>
+</div>
 
 </body>
 </html>

@@ -10,7 +10,7 @@ session_start();
 	<link rel="stylesheet" href="css1.css"/>
 	
 
-	<title>Pakketurer</title>
+	<title>Australia</title>
 </head>
 
 <body background="paradis.jpg">
@@ -25,11 +25,11 @@ session_start();
 
 <div class="bodybox">
 <div class="menybox">
-<h1 id="overskrift">Pakketurer.com</h1>
+<h1 id="overskrift">Australia</h1>
 <table id="menytabell">
 <form action="" method="get">
 <tr>
-<td><a id="hjemknapp" href="index.php">Hjem</a></td>
+<td><a id="hjemknapp" href="index.phtml">Hjem</a></td>
 <td><input class="meny" type="submit" value="  Fisketur  " name="fisk"/></td>
 <td><input class="meny" type="submit" value="   Surfing   " name="surf"/></td>
 <td><input class="meny" type="submit" value="  Skiferie  " name="ski"/></td>
@@ -40,27 +40,26 @@ session_start();
 
 <?php
 
-
 if (isset($_REQUEST["fisk"]))
 {
-    $_SESSION["filnavn"]="index.phtml";
+     $_SESSION["filnavn"]="australia.phtml";
 	include "nedremeny/fisk.phtml";
 
 }
 
 if (isset($_REQUEST["surf"]))
 {
-     $_SESSION["filnavn"]="index.phtml";
+    $_SESSION["filnavn"]="australia.phtml";
 	include "nedremeny/surf.phtml";
 }
 if (isset($_REQUEST["ski"]))
 {
-     $_SESSION["filnavn"]="index.phtml";
+    $_SESSION["filnavn"]="australia.phtml";
 	include "nedremeny/ski.phtml";
 }
 if (isset($_REQUEST["fotball"]))
 {
-    $_SESSION["filnavn"]="index.phtml";
+    $_SESSION["filnavn"]="australia.phtml";
 	include "nedremeny/fotball.phtml";
 }
 ?>
@@ -75,7 +74,7 @@ if (isset($_REQUEST["fotball"]))
 <img id="Bali" src="bali.jpg" alt="Bali"   /> 
 <img id="Berlin"  src="berlin.jpg" alt="Berlin"  />
 
-<p>Her står det masse om oss og bilder og tilbud etc.</p>
+<p>Australia, en hver surfers paradis!</p>
 </div>
 
 </body>

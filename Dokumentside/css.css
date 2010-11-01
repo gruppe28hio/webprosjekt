@@ -88,6 +88,11 @@ font-size:70%;
 {
 list-style-type:circle;
 }
+.innhold
+{
+list-style-type:circle;
+margin-left:8%;
+}
 .bildetekst
 {
 position:absolute;

@@ -66,6 +66,7 @@ text-align: center;
 
 input.nedremeny
 {
+
 border-style: inset;
 background: white;
 color: black;
@@ -75,6 +76,7 @@ width: 100%;
 #menytabell
 {
 position: relative;
+z-index: 10;
 top: 30%;
 left: 33%;
 right: 38%;
@@ -90,8 +92,10 @@ body
 
 #Berlin
 {
+
 width: 20%;
 position: relative;
+z-index: 9;
 top: 4%;
 right: -20%;
     
@@ -114,7 +118,7 @@ border-color: red;
 width: 100%;    
 }
 .hjemknapp
-{   
+{   font-size: 97%;
     padding-left: 15%;
     padding-right: 15%;
     position: relative;

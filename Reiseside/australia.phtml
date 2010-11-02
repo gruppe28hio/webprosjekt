@@ -29,7 +29,7 @@ session_start();
 <table id="menytabell">
 <form action="" method="get">
 <tr>
-<td><a class="hjemknapp" href="index.phtml">  Hjem  </a></td>
+<td><input class="meny" type="submit" value="  Hjem  " name="hjem"/></td>
 <td><input class="meny" type="submit" value="  Fisketur  " name="fisk"/></td>
 <td><input class="meny" type="submit" value="   Surfing   " name="surf"/></td>
 <td><input class="meny" type="submit" value="  Skiferie  " name="ski"/></td>
@@ -39,6 +39,12 @@ session_start();
 
 
 <?php
+
+
+if (isset($_REQUEST["hjem"]))
+{
+    	include "nedremeny/hjem.phtml";
+}
 
 if (isset($_REQUEST["fisk"]))
 {

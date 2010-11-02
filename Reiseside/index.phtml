@@ -8,7 +8,7 @@ session_start();
 	<meta name="description" content="Hovedside - reiseside."/>
 	<meta name="author" content="Barbro M. Klashaugen, Marius Karlsen, Dan Eig, Alexander Paulsen"/>
 	<link rel="stylesheet" href="css1.css"/>
-	 
+	
 
 	<title>Pakketurer</title>
 </head>
@@ -29,7 +29,7 @@ session_start();
 <table id="menytabell">
 <form action="" method="get">
 <tr>
-<td><a class="hjemknapp" href="index.phtml">  Hjem  </a></td>
+<td><input class="meny" type="submit" value="    Hjem    " name="hjem"/></td>
 <td><input class="meny" type="submit" value="  Fisketur  " name="fisk"/></td>
 <td><input class="meny" type="submit" value="   Surfing   " name="surf"/></td>
 <td><input class="meny" type="submit" value="  Skiferie  " name="ski"/></td>
@@ -39,7 +39,11 @@ session_start();
 
 
 <?php
-
+if (isset($_REQUEST["hjem"]))
+{
+	$_SESSION["filnavn"]="index.phtml";
+    	include "nedremeny/hjem.phtml";
+}
 
 if (isset($_REQUEST["fisk"]))
 {
@@ -75,11 +79,8 @@ if (isset($_REQUEST["fotball"]))
 <img id="Bali" src="bali.jpg" alt="Bali"   /> 
 <img id="Berlin"  src="berlin.jpg" alt="Berlin"  />
 
-<p>Er du lei av å reise til syden for å daffe på stranda? Ønsker du deg en litt annen reise?
-	En reise du aldri vil glemme. Pakketurer tilbyr en annerledes reise med aktiviteter som
-     du aldri har vært på. Velkommen til Pakketurer!</p>
-
+<p>Her står det masse om oss og bilder og tilbud etc.</p>
 </div>
 
 </body>
-</html>
+</html>bla

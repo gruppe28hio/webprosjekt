@@ -1,5 +1,4 @@
-html
-{ 
+html { 
 	width: 80%;
 	margin-left: 10%;
 	margin-right: 10%;
@@ -19,6 +18,11 @@ body{
 	background: #DEDEDE;	
 	padding:1%;
 	}
+#links
+{
+text-align:center;
+font-size: 85%;
+}
 
 #header h1 {
 		text-align: center;
@@ -121,3 +125,17 @@ right:40%;
 	
 	float:right;
 }
+#nettstedkart
+{
+width:80%;
+height:120%;
+}
+
+.center
+{
+text-align:center;
+}
+
+
+
+

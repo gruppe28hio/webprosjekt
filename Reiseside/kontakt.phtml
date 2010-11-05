@@ -73,9 +73,38 @@ if (isset($_REQUEST["fotball"]))
 
 
 <br/><br/>
-<p>Kontakt oss</p>
+<p>Om det er noe du lurer på, er  det bare å kontakte oss!</p>
+<p>Fyll ut skjemaet under, så svarer vi deg så fort vi kan.</p>
+<p>Mvh iTravel</p>
+<hr/>
 
 
+
+<div id="form">
+<p><form action="mailsendt.phtml" method="post">
+Navn:<br />
+<input type="text" name="navn"/>*<br />
+Telefonnummer:<br />
+<input type="text" name="telefonnummer"   />*<br />
+E-post:<br />
+<input type="text" name="epost"  />*<br /><br />
+Velg fra listen under, hvilken kategori henvendelsen gjelder.<br /><br /></p>
+<tr>
+    
+    <td><select size="1" name="henvendelse">
+            <option>Destinasjoner</option>
+            <option>Priser</option>
+            <option>Bestilling</option>
+            <option>Avbestilling</option>
+            <option>Annet</option>
+       </select></td>
+</tr><br /><br />
+<textarea name="beskjed"   cols="30" rows="5">   skriv din kommentar her: </textarea>  <br />
+<input type="submit" value="Send" name="knapp"/>
+</form>
+
+
+</div>
 </div>
 
 </body>

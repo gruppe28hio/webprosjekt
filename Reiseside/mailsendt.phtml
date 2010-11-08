@@ -13,7 +13,7 @@ session_start();
 	<title>iTravel</title>
 </head>
 
-<body background="paradis.jpg">
+
 
 <div id="overbodybox">
 <ul><li><a href="omoss.phtml" >Om oss</a></li> 
@@ -88,7 +88,7 @@ or($_REQUEST["epost"]==""))
 else 
     
 {
-    mail("s171667@stud.hio.no", "$_REQUEST[henvendelse]","$_REQUEST[beskjed]$_REQUEST[navn]$_REQUEST[telefonnummer]","From: $_REQUEST[epost]");         
+    mail("marius_k86@hotmail.com", "$_REQUEST[henvendelse]","$_REQUEST[beskjed]$_REQUEST[navn]$_REQUEST[telefonnummer]","From: $_REQUEST[epost]");         
 
 echo "<br/><br/><b>Du har sendt inn følgende informasjon;</b><br/><br/>";
 echo "<b>Navn: </b>". $_REQUEST["navn"]. "<br/><br>";

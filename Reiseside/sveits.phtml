@@ -10,10 +10,10 @@ session_start();
 	<link rel="stylesheet" href="css1.css"/>
 	
 
-	<title>iTravel</title>
+	<title>iTravel - Sveits</title>
 </head>
 
-<body background="paradis.jpg">
+
 
 <div id="overbodybox">
 <ul><li><a href="omoss.phtml" >Om oss</a></li> 
@@ -42,30 +42,30 @@ session_start();
 <?php
 if (isset($_REQUEST["hjem"]))
 {
-	$_SESSION["filnavn"]="index.phtml";
+	$_SESSION["filnavn"]="sveits.phtml";
     	include "nedremeny/hjem.phtml";
 }
 
 if (isset($_REQUEST["fisk"]))
 {
-    $_SESSION["filnavn"]="index.phtml";
+    $_SESSION["filnavn"]="sveits.phtml";
 	include "nedremeny/fisk.phtml";
 
 }
 
 if (isset($_REQUEST["surf"]))
 {
-     $_SESSION["filnavn"]="index.phtml";
+     $_SESSION["filnavn"]="sveits.phtml";
 	include "nedremeny/surf.phtml";
 }
 if (isset($_REQUEST["ski"]))
 {
-     $_SESSION["filnavn"]="index.phtml";
+     $_SESSION["filnavn"]="sveits.phtml";
 	include "nedremeny/ski.phtml";
 }
 if (isset($_REQUEST["fotball"]))
 {
-    $_SESSION["filnavn"]="index.phtml";
+    $_SESSION["filnavn"]="sveits.phtml";
 	include "nedremeny/fotball.phtml";
 }
 ?>
@@ -73,11 +73,37 @@ if (isset($_REQUEST["fotball"]))
 </div>
 
 
-<br/><br/>
-<p>Er du lei av allminnelige reisemål der du bare ligger og kjeder deg på stranda hele ferien? 
-Ønsker du å gjøre noe nytt i ferien? iTravel arrangerer reiser for den mer eventyrlystne som ønsker
- å oppleve mer i ferien. Velkommen til iTravel - vi er her for deg!</p>
-<img id="balisurf" src="balisurf.png" alt="bali" />
+
+<h2>Skiferie i Sveits</h2>
+<div id="sveits">
+<p>Med sin plassering midt i Alpene er Sveits et skisportens Mekka. Det finnes ca 150 skiområder, 
+hvorav de mest kjente er La Tzoumaz, Verbier og St. Moritz. Her finner du hyggelige fjellandsbyer, 
+fantastiske panorama utsikter, og ikke minst utrolig gjestfrie mennesker. I tillegg er forholdene for 
+skiløpere og snowboardere meget bra.</p>
+<p>Om du har en eventyrer i deg så kan du prøve deg på Haute Route, en tur som går mellom Chamonix og
+ Mount Blanc i Frankrike til Matterhorn som ruver over Zermatt i Sveits. Turen tar ca. en uke på ski
+  og er 180 km lang. Det er muligheter til å variere hvor du vil starte fra og hvilken rute du vil ta.</p> 
+<p>Dette er for dem som virkelig har lyst på en utfordring, da mange starter turen, men ikke alle gjør den ferdig.
+ Men det viktigste er jo at man har prøvd, og at man har hatt en fantastisk ferie litt utenom det vanlige!
+</p>
+<p>Du kan være 100 % sikker på at du får valuta for pengene i Sveits. Gjestfriheten, maten og standarden på 
+alpinbakkene er i særklasse!</p></div>
+<img id="sveitsa" src="sveitsa.jpg" alt="Sveits Allalinhorn"/>
+<img id="sveitsh" src="sveitsh.jpg" alt="Sveits Hauteroute" />
+<div id="sveitstekst"><p><em>Sveits Allalinhorn</em></p></div> 
+<div id="sveitstekst2"><p><em>Sveits Haute Route</em></p></div>
+
+
+<!--Kilder
+http://www.skiinfo.no/Land/Sveits-ECH-9671-no.jhtml
+http://en.wikipedia.org/wiki/Haute_Route
+
+Bilde:
+http://en.wikipedia.org/wiki/File:Allalinhorn_4027_2007_04_17.JPG
+http://en.wikipedia.org/wiki/File:Hauteroute.jpg-->
+
+
+
 
 </div>
 

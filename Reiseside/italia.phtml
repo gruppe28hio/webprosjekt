@@ -10,10 +10,10 @@ session_start();
 	<link rel="stylesheet" href="css1.css"/>
 	
 
-	<title>iTravel</title>
+	<title>iTravel - Italia</title>
 </head>
 
-<body background="paradis.jpg">
+
 
 <div id="overbodybox">
 <ul><li><a href="omoss.phtml" >Om oss</a></li> 
@@ -42,30 +42,30 @@ session_start();
 <?php
 if (isset($_REQUEST["hjem"]))
 {
-	$_SESSION["filnavn"]="index.phtml";
+	$_SESSION["filnavn"]="italia.phtml";
     	include "nedremeny/hjem.phtml";
 }
 
 if (isset($_REQUEST["fisk"]))
 {
-    $_SESSION["filnavn"]="index.phtml";
+    $_SESSION["filnavn"]="italia.phtml";
 	include "nedremeny/fisk.phtml";
 
 }
 
 if (isset($_REQUEST["surf"]))
 {
-     $_SESSION["filnavn"]="index.phtml";
+     $_SESSION["filnavn"]="italia.phtml";
 	include "nedremeny/surf.phtml";
 }
 if (isset($_REQUEST["ski"]))
 {
-     $_SESSION["filnavn"]="index.phtml";
+     $_SESSION["filnavn"]="italia.phtml";
 	include "nedremeny/ski.phtml";
 }
 if (isset($_REQUEST["fotball"]))
 {
-    $_SESSION["filnavn"]="index.phtml";
+    $_SESSION["filnavn"]="italia.phtml";
 	include "nedremeny/fotball.phtml";
 }
 ?>

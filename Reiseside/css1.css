@@ -1,3 +1,9 @@
+body
+{
+    background-image: url("paradis.jpg");
+    background-repeat: no-repeat;
+}
+
 .menybox
 {
     height:7em;
@@ -140,4 +146,52 @@ width: 100%;
 {
     float: left;
     text-align: left;
+}
+
+#reisevilkar
+{
+    text-align: left;
+}
+
+#omoss
+{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#sveitsa
+{
+    float: left;
+    height: 30%;
+    width: 38%;
+    padding-right: 5%;
+    margin-left: 7%;
+}
+
+#sveitsh
+{
+    float: right;
+    height: 30%;
+    width: 38%;
+    padding-left: 5%;
+    margin-right: 7%;
+}
+
+#sveits
+{
+    margin-left: 7%;
+    margin-right: 7%;
+    text-align: left;
+}
+
+#sveitstekst
+{
+    float: left;
+    margin-left: 18%; 
+}
+
+#sveitstekst2
+{
+    float: right;
+    margin-right: 18%;
 }

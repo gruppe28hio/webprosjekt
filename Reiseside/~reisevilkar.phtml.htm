@@ -1,6 +1,17 @@
-<?php
-session_start();
-?>
+
+Warning: session_start(): Cannot send session cookie - headers already sent in C:\Users\Marius\.ssh\webprosjekt\Reiseside\reisevilkar.phtml on line 2
+
+Call Stack:
+    0.0210     330336   1. {main}() C:\Users\Marius\.ssh\webprosjekt\Reiseside\reisevilkar.phtml:0
+    0.0210     330368   2. session_start() C:\Users\Marius\.ssh\webprosjekt\Reiseside\reisevilkar.phtml:2
+
+
+Warning: session_start(): Cannot send session cache limiter - headers already sent in C:\Users\Marius\.ssh\webprosjekt\Reiseside\reisevilkar.phtml on line 2
+
+Call Stack:
+    0.0210     330336   1. {main}() C:\Users\Marius\.ssh\webprosjekt\Reiseside\reisevilkar.phtml:0
+    0.0210     330368   2. session_start() C:\Users\Marius\.ssh\webprosjekt\Reiseside\reisevilkar.phtml:2
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -10,10 +21,10 @@ session_start();
 	<link rel="stylesheet" href="css1.css"/>
 	
 
-	<title>iTravel - Hawaii</title>
+	<title>iTravel</title>
 </head>
 
-
+<body background="paradis.jpg">
 
 <div id="overbodybox">
 <ul><li><a href="omoss.phtml" >Om oss</a></li> 
@@ -26,7 +37,6 @@ session_start();
 <div class="bodybox">
 <div class="menybox">
 <img id="itravel" src="headbox.png" alt="Head"   /> 
-
 <table id="menytabell">
 <form action="" method="get">
 <tr>
@@ -39,45 +49,18 @@ session_start();
 </form>
 
 
-<?php
-if (isset($_REQUEST["hjem"]))
-{
-	$_SESSION["filnavn"]="hawaii.phtml";
-    	include "nedremeny/hjem.phtml";
-}
-
-if (isset($_REQUEST["fisk"]))
-{
-    $_SESSION["filnavn"]="hawaii.phtml";
-	include "nedremeny/fisk.phtml";
-
-}
-
-if (isset($_REQUEST["surf"]))
-{
-     $_SESSION["filnavn"]="hawaii.phtml";
-	include "nedremeny/surf.phtml";
-}
-if (isset($_REQUEST["ski"]))
-{
-     $_SESSION["filnavn"]="hawaii.phtml";
-	include "nedremeny/ski.phtml";
-}
-if (isset($_REQUEST["fotball"]))
-{
-    $_SESSION["filnavn"]="hawaii.phtml";
-	include "nedremeny/fotball.phtml";
-}
-?>
 </table>
 </div>
 
 
 <br/><br/>
-<p>Er du lei av allminnelige reisemål der du bare ligger og kjeder deg på stranda hele ferien? 
-Ønsker du å gjøre noe nytt i ferien? iTravel arrangerer reiser for den mer eventyrlystne som ønsker
- å oppleve mer i ferien. Velkommen til iTravel - vi er her for deg!</p>
-<img id="balisurf" src="balisurf.png" alt="bali" />
+<div id="reisevilkar">
+<p>iTravel fraskriver seg alt ansvar om:</p>
+<ul><li>Bagasjen blir borte under reisen</li></ul>
+<ul><li>Flyet er forsinket, så overgangsfly har dratt ved ankomst</li></ul>
+<ul><li>Flyet blir kansellert</li></ul>
+<ul><li>Bagasjen blir borte under reisen</li></ul>
+</div>
 
 </div>
 

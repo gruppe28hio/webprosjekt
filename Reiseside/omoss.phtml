@@ -10,10 +10,10 @@ session_start();
 	<link rel="stylesheet" href="css1.css"/>
 	
 
-	<title>iTravel</title>
+	<title>iTravel - Om oss</title>
 </head>
 
-<body background="paradis.jpg">
+
 
 <div id="overbodybox">
 <ul><li><a href="omoss.phtml" >Om oss</a></li> 
@@ -41,30 +41,30 @@ session_start();
 <?php
 if (isset($_REQUEST["hjem"]))
 {
-	$_SESSION["filnavn"]="index.phtml";
+	$_SESSION["filnavn"]="omoss.phtml";
     	include "nedremeny/hjem.phtml";
 }
 
 if (isset($_REQUEST["fisk"]))
 {
-    $_SESSION["filnavn"]="index.phtml";
+    $_SESSION["filnavn"]="omoss.phtml";
 	include "nedremeny/fisk.phtml";
 
 }
 
 if (isset($_REQUEST["surf"]))
 {
-     $_SESSION["filnavn"]="index.phtml";
+     $_SESSION["filnavn"]="omoss.phtml";
 	include "nedremeny/surf.phtml";
 }
 if (isset($_REQUEST["ski"]))
 {
-     $_SESSION["filnavn"]="index.phtml";
+     $_SESSION["filnavn"]="omoss.phtml";
 	include "nedremeny/ski.phtml";
 }
 if (isset($_REQUEST["fotball"]))
 {
-    $_SESSION["filnavn"]="index.phtml";
+    $_SESSION["filnavn"]="omoss.phtml";
 	include "nedremeny/fotball.phtml";
 }
 ?>
@@ -73,7 +73,14 @@ if (isset($_REQUEST["fotball"]))
 
 
 <br/><br/>
-<p>Om oss!</p>
+<div id="omoss">
+<p>iTravel er et reiseselskap som ble etablert høsten 2010.</p>
+<p>Vårt mål er å kunne tilby den reiselystnegode tilbud til forskjellige destinasjoner verden rundt.
+Vi har gode avtaler med flyselskap og kvalitetshotell verden over, slik at vi kan tilby gode pakkeløsninger.
+Vårt mål er å bli ledende innen opplevelsesreiser, og vi prøver også hele tiden å være pris- og konkurransedyktige.
+Vi satser også på å ha en god kundeservice ved eventuelle spørsmål eller problemer tilknyttet reisen eller bestillingen.</p>
+</div>
+<h3>God tur!</h3>
 
 
 </div>

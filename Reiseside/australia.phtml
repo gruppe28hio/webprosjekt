@@ -10,10 +10,10 @@ session_start();
 	<link rel="stylesheet" href="css1.css"/>
 	
 
-	<title>Australia</title>
+	<title>iTravel - Australia</title>
 </head>
 
-<body background="paradis.jpg">
+
 
 <div id="overbodybox">
 <ul><li><a href="omoss.html" >Om oss</a></li> 
@@ -43,9 +43,9 @@ session_start();
 
 if (isset($_REQUEST["hjem"]))
 {
+	$_SESSION["filnavn"]="australia.phtml";
     	include "nedremeny/hjem.phtml";
 }
-
 if (isset($_REQUEST["fisk"]))
 {
      $_SESSION["filnavn"]="australia.phtml";

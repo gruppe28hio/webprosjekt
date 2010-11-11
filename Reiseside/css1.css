@@ -253,3 +253,42 @@ input.nedremeny
     margin-top: 2%;
     margin-left: 2.5%;
 }
+
+#usatext
+{
+    margin-left: 7%;
+    margin-right: 7%;
+    text-align: left;
+    margin-top: 1%;
+}
+
+#usavenstre
+{
+    float: left;
+    height: 25%;
+    width: 30%;
+    padding-right: 5%;
+    margin-left: 7%;
+}
+
+
+#usahoyre
+{
+    float: right;
+    height: 25%;
+    width: 30%;
+    padding-left: 5%;
+    margin-right: 7%; 
+}
+
+#usatextvenstre
+{
+    float:left;
+    margin-left: 9%; 
+}
+
+#usatexthoyre
+{
+    float: right;
+    margin-right: 15%;
+}

@@ -90,7 +90,7 @@ or($_REQUEST["epost"]==""))
 else 
     
 {
-    mail("gruppe28@hotmail.com", "$_REQUEST[henvendelse]","$_REQUEST[beskjed]$_REQUEST[navn]$_REQUEST[telefonnummer]","From: $_REQUEST[epost]");         
+    mail("gruppe28@hotmail.com", "$_REQUEST[henvendelse]","$_REQUEST[beskjed]\r\n$_REQUEST[navn]\r\n$_REQUEST[telefonnummer]","From: $_REQUEST[epost]");         
 
 echo "<br/><br/><b>Du har sendt inn følgende informasjon;</b><br/><br/>";
 echo "<b>Navn: </b>". $_REQUEST["navn"]. "<br/><br>";

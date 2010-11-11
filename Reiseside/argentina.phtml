@@ -10,10 +10,11 @@ session_start();
 	<link rel="stylesheet" href="css1.css"/>
 	
 
-	<title>iTravel - Argentina</title>
-        <link rel="icon" href="logo.jpg" type="image/x-icon" />
+	<title>iTravel - England</title>
+    <link rel="icon" href="logo.jpg" type="image/x-icon" />
         <link rel="shortcut icon" href="logo.jpg" type="image/x-icon" />
 </head>
+<body>
 
 
 <div id="overbodybox">
@@ -43,42 +44,60 @@ session_start();
 <?php
 if (isset($_REQUEST["hjem"]))
 {
-	$_SESSION["filnavn"]="argentina.phtml";
+	$_SESSION["filnavn"]="england.phtml";
     	include "nedremeny/hjem.phtml";
 }
 
 if (isset($_REQUEST["fisk"]))
 {
-    $_SESSION["filnavn"]="argentina.phtml";
+    $_SESSION["filnavn"]="england.phtml";
 	include "nedremeny/fisk.phtml";
 
 }
 
 if (isset($_REQUEST["surf"]))
 {
-     $_SESSION["filnavn"]="argentina.phtml";
+     $_SESSION["filnavn"]="england.phtml";
 	include "nedremeny/surf.phtml";
 }
 if (isset($_REQUEST["ski"]))
 {
-     $_SESSION["filnavn"]="argentina.phtml";
+     $_SESSION["filnavn"]="england.phtml";
 	include "nedremeny/ski.phtml";
 }
 if (isset($_REQUEST["fotball"]))
 {
-    $_SESSION["filnavn"]="argentina.phtml";
+    $_SESSION["filnavn"]="england.phtml";
 	include "nedremeny/fotball.phtml";
 }
 ?>
 </table>
 </div>
 
+<div id="overskriftfotball">
+<h2>Fotball i Argentina</h2>
+</div>
+<img id="argentina" src="afa.jpg" alt="Argentina"/>
+<img id="argentina2" src="afa.jpg" alt="Argentina"/>
+<!-- Bildene er hentet fra Wikipedia http://en.wikipedia.org/wiki/File:Bombonera_Boca_Juniors.JPG, 
+http://en.wikipedia.org/wiki/File:Superclasico-Monumental.jpg-->
+<div id="textmidt">
+<p>Argentinsk liga er en fartsfylt liga, med høyt tempo, høyt temprement, og mye liv på tribunene.</p>
+<p>Oppgjørene mellom Boca Juniors, og River Plate er et skikkelig by-derby i Buenos Aires, hvor hele byen står på hodet på
+kampdagen. Denne ligaen har hatt store spillere som, Diego Maradona, Pablo Aimar, Gabriel Batistuta, Hernan Crespo og Carlos Tevez, for å nevne noen.</p>
+<p>I April 2004, lagde den engelske avisen The Observer en liste over <a href="http://observer.guardian.co.uk/osm/story/0,,1182710,00.html">50 sportsbegivenheter</a> du må få med deg før du dør, og kampen mellom
+Boca Juniors og River Plate kom på førsteplass!</p>
+<p>iTravel kan tilby deg en total pakke, med fly, kampbilletter, og hotell, på alle kampene i Argentina.</p>
 
-<br/><br/>
-<p>Er du lei av allminnelige reisemål der du bare ligger og kjeder deg på stranda hele ferien? 
-Ønsker du å gjøre noe nytt i ferien? iTravel arrangerer reiser for den mer eventyrlystne som ønsker
- å oppleve mer i ferien. Velkommen til iTravel - vi er her for deg!</p>
-<img id="balisurf" src="balisurf.png" alt="bali" />
+</div>
+<br/><br />
+<img id="bildevenstre" src="boca.jpg" alt="Boca Juniors" /> 
+
+<img id="bildehoyre" src="river.jpg" alt="River Plate" /> 
+<div id="textboca"><p><em>Estadio Alberto J. Armando, Boca Juniors, i Buenos Aires, </em></p></div> 
+<div id="textunderhoyre"><p><em>River Plate Stadium, Buenos Aires</em></p></div>
+</div>
+
 
 </div>
 

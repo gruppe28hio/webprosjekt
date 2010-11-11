@@ -3,14 +3,14 @@ session_start();
 ?>
 <!DOCTYPE html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 <title>Side 2</title>
 </head>
 <body>
 <?php
 if($_REQUEST["dag"] =="" or $_REQUEST["dato"] =="" or $_REQUEST["aar"] =="" or $_REQUEST["daghjem"] =="" or $_REQUEST["datohjem"] =="" or $_REQUEST["aarhjem"] =="") 
 {
-	echo "Du har ikke fylt ut all informasjonen pÃ¥ forrige side";
+	echo "Du har ikke fylt ut all informasjonen på forrige side";
 }
 if ($_REQUEST["fisketur"] =="" and $_REQUEST["surf"] =="" and $_REQUEST["skiferie"] =="" and $_REQUEST["fotballtur"] =="")
 {

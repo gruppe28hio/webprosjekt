@@ -3,7 +3,7 @@ session_start();
 ?>
 <!DOCTYPE html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 <title>Side 3</title>
 </head>
 
@@ -28,13 +28,13 @@ echo $_SESSION["antall"];
 }?></td>
 </tr>
 <tr>
-<td>ReisesmÃ¥l: </td>
+<td>Reisesmål: </td>
 <td><?php
 $pris = 0;
 $hotell= 0;
 		if ($_SESSION["fisketur"] =="" and $_SESSION["surf"] =="" and $_SESSION["skiferie"] =="" and $_SESSION["fotballtur"] =="")
 		{
-			echo "Velg et reisemÃ¥l <a href='bestillingsskjema.php'>tilbake</a>";
+			echo "Velg et reisemål <a href='bestillingsskjema.php'>tilbake</a>";
 		}
 	 if (isset($_SESSION["fisketur"]))
 	 {
@@ -58,7 +58,7 @@ $hotell= 0;
 	 if (isset($_SESSION["surf"]))
 	 {
 		 echo $_SESSION["surf"]." ";
-		 if ($_SESSION["surf"] == "Surfe pÃ¥ Bali")
+		 if ($_SESSION["surf"] == "Surfe på Bali")
 		{
 		$pris += 9250;
 		$hotell += $_SESSION["hotellnetter"] * 159;
@@ -146,7 +146,7 @@ echo $_SESSION["daghjem"]."/".$_SESSION["datohjem"]."/".$_SESSION["aarhjem"]; } 
 <td><?php
 if ($_SESSION["hotellnetter"] == "")
 {
-	echo "Fyll inn antall netter du vil ha pÃ¥ hotell <a href='bestillingsskjema.php'>tilbake</a>";
+	echo "Fyll inn antall netter du vil ha på hotell <a href='bestillingsskjema.php'>tilbake</a>";
 }
 else {
 	echo $_SESSION["hotellnetter"];

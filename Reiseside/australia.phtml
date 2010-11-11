@@ -11,23 +11,22 @@ session_start();
 	
 
 	<title>iTravel - Australia</title>
-    <link rel="icon" href="logo.jpg" type="image/x-icon" />
-        <link rel="shortcut icon" href="logo.jpg" type="image/x-icon" />
 </head>
-<body>
+
 
 
 <div id="overbodybox">
-<ul><li><a href="omoss.html" >Om oss</a></li> 
-<li><a href="kontakt.html" >Kontakt oss</a></li>
-<li><a href="reisevilkar.html" >Reisevilkår</a></li>
+<ul><li><a href="omoss.phtml" >Om oss</a></li> 
+<li><a href="kontakt.phtml" >Kontakt oss</a></li>
+<li><a href="reisevilkar.phtml" >Reisevilkår</a></li>
 </ul>
 </div>
 
 
 <div class="bodybox">
 <div class="menybox">
-<img id="itravel" src="headbox.png" alt="Head"   />
+<img id="itravel" src="headbox.png" alt="Head"   /> 
+
 <table id="menytabell">
 <form action="" method="get">
 <tr>
@@ -41,28 +40,27 @@ session_start();
 
 
 <?php
-
-
 if (isset($_REQUEST["hjem"]))
 {
 	$_SESSION["filnavn"]="australia.phtml";
     	include "nedremeny/hjem.phtml";
 }
+
 if (isset($_REQUEST["fisk"]))
 {
-     $_SESSION["filnavn"]="australia.phtml";
+    $_SESSION["filnavn"]="australia.phtml";
 	include "nedremeny/fisk.phtml";
 
 }
 
 if (isset($_REQUEST["surf"]))
 {
-    $_SESSION["filnavn"]="australia.phtml";
+     $_SESSION["filnavn"]="australia.phtml";
 	include "nedremeny/surf.phtml";
 }
 if (isset($_REQUEST["ski"]))
 {
-    $_SESSION["filnavn"]="australia.phtml";
+     $_SESSION["filnavn"]="australia.phtml";
 	include "nedremeny/ski.phtml";
 }
 if (isset($_REQUEST["fotball"]))
@@ -76,13 +74,35 @@ if (isset($_REQUEST["fotball"]))
 
 
 
+<h2>Surfing i Australia</h2>
+<div id="textmidt">
+<p>Her kan du velge mellom tilbud for nybegynnere, mer erfarne, eller for eksperter. 
+Australia er vel kanskje det første mange tenker på når de hører ordet ’surfing’. Med flotte strender, pene mennesker og fantastiske bølger. </p>
+<p>For de uerfarne har vi tilbud kort vei fra Sydney, ved Red Devil Beach. Den regnes som en av Australias tryggeste strender og er dermed 
+perfekt for nybegynnerne. Der tilbys de nybegynnerkurs i surfing fra profesjonelle surfeinstruktører som har lang fartstid i å instruere 
+uerfarne surfere.  </p> 
+<p>Har du litt erfaring med surfing, passer Charlton Bay perfekt. Her er bølgene litt større, men de er veldig konsistente, og stort sett er 
+de like store og kommer like langt fra hverandre. Forholdene er det ingenting å si på om man vil ha det fantastisk morsomt og samtidig bli sliten! 
+</p>
+<p>Hvis du er ekspert på surfing og har lang erfaring med det, er det mange plasser i Australia du kan velge. Vi kan sette deg i kontakt med lokale 
+surfeeksperter som kan gi deg tips og råd om hvor du kan dra, og om du ønsker det, folk som kan bli med deg ut på bølgene.  </p></div>
+<img id="bildevenstre" src="surfaustralia.jpg" alt="Surfer i Australia"/>
+<img id="bildehoyre" src="surfbegynner.jpg" alt="Nybegynnerkurs" />
+<div id="textundervenstre"><p><em>Surfer i sitt ess</em></p></div> 
+<div id="textunderhoyre"><p><em>Tilbud for alle</em></p></div>
+
+
+<!--Kilder
+http://www.wikipedia.com
+http://www.x-plore.no
+
+Bilde:
+http://no.wikipedia.org/wiki/Fil:Surfing_in_Hawaii.jpg
+Privat-->
 
 
 
-<img id="Bali" src="bali.jpg" alt="Bali"   /> 
-<img id="Berlin"  src="berlin.jpg" alt="Berlin"  />
 
-<p>Australia, en hver surfers paradis!</p>
 </div>
 
 </body>

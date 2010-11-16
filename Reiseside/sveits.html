@@ -1,6 +1,4 @@
-<?php
-session_start();
-?>
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -18,9 +16,9 @@ session_start();
 
 
 <div id="overbodybox">
-<ul><li><a href="omoss.phtml" >Om oss</a></li> 
-<li><a href="kontakt.phtml" >Kontakt oss</a></li>
-<li><a href="reisevilkar.phtml" >Reisevilkår</a></li>
+<ul><li><a href="omoss.html" >Om oss</a></li> 
+<li><a href="kontakt.html" >Kontakt oss</a></li>
+<li><a href="reisevilkar.html" >Reisevilkår</a></li>
 </ul>
 </div>
 
@@ -29,54 +27,54 @@ session_start();
 <div class="menybox">
 <img id="itravel" src="headbox.png" alt="Head"   /> 
 
-<table id="menytabell">
-<form action="" method="get">
-<tr>
-<td><input class="meny" type="submit" value="    Hjem    " name="hjem"/></td>
-<td><input class="meny" type="submit" value="  Fisketurer  " name="fisk"/></td>
-<td><input class="meny" type="submit" value="   Surfing   " name="surf"/></td>
-<td><input class="meny" type="submit" value="  Skiferier  " name="ski"/></td>
-<td><input class="meny" type="submit" value="Fotballturer " name="fotball"/></td>
-</tr>
-</form>
+<div id="meny">
+<ul>
+<li><a href="index.phtml">Hjem</a></li>
+</ul>
+<ul>
+<li><a href="#">Fisketurer</a>
+<ul>
+<li><a href="lofoten.html">Lofoten</a></li>
+<li><a href="florida.html">Florida</a></li>
+<li><a href="australiafisk.html">Australia</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><a href="#">Surfing</a>
+<ul>
+<li><a href="bali.html">Bali</a></li>
+<li><a href="australia.html">Australia</a></li>
+<li><a href="hawaii.html">Hawaii</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong><a style="background: #CCC;" href="#">Skiferie</a></strong>
+<ul>
+<li><a href="sveits.html">Sveits</a></li>
+<li><a href="usa.html">USA</a></li>
+<li><a href="italia.html">Italia</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><a href="#">Fotballtur</a>
+<ul>
+<li><a href="england.html">England</a></li>
+<li><a href="spania.html">Spania</a></li>
+<li><a href="argentina.html">Argentina</a></li>
+</ul>
+</li>
+</ul>
 
 
-<?php
-if (isset($_REQUEST["hjem"]))
-{
-	$_SESSION["filnavn"]="sveits.phtml";
-    	include "nedremeny/hjem.phtml";
-}
-
-if (isset($_REQUEST["fisk"]))
-{
-    $_SESSION["filnavn"]="sveits.phtml";
-	include "nedremeny/fisk.phtml";
-
-}
-
-if (isset($_REQUEST["surf"]))
-{
-     $_SESSION["filnavn"]="sveits.phtml";
-	include "nedremeny/surf.phtml";
-}
-if (isset($_REQUEST["ski"]))
-{
-     $_SESSION["filnavn"]="sveits.phtml";
-	include "nedremeny/ski.phtml";
-}
-if (isset($_REQUEST["fotball"]))
-{
-    $_SESSION["filnavn"]="sveits.phtml";
-	include "nedremeny/fotball.phtml";
-}
-?>
-</table>
-</div>
+</div></div>
 
 
-
+<div class="overtextmidt">
 <h2>Skiferie i Sveits</h2>
+</div>
 <div id="textmidt">
 <p>Med sin plassering midt i Alpene er Sveits et skisportens Mekka. Det finnes ca 150 skiområder, 
 hvorav de mest kjente er La Tzoumaz, Verbier og St. Moritz. Her finner du hyggelige fjellandsbyer, 
@@ -92,7 +90,8 @@ skiløpere og snowboardere meget bra.</p>
  Saas-Fee som ligger kun 4.3 km fra Allalinhorn.</p>
 <p>Du kan være 100 % sikker på at du får valuta for pengene i Sveits.
  Gjestfriheten, maten og standarden på 
-alpinbakkene er i særklasse!</p></div>
+alpinbakkene er i særklasse!</p>
+<p><a href="index.phtml">Bestill din reise her</a></p></div>
 <img id="bildevenstre" src="sveitsa.jpg" alt="Sveits Allalinhorn"/>
 <img id="bildehoyre" src="sveitsh.jpg" alt="Sveits Hauteroute" />
 <div id="textundervenstre"><p><em>Sveits Allalinhorn</em></p></div> 

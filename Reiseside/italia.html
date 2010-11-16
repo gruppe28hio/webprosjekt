@@ -1,6 +1,4 @@
-<?php
-session_start();
-?>
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -18,9 +16,9 @@ session_start();
 
 
 <div id="overbodybox">
-<ul><li><a href="omoss.phtml" >Om oss</a></li> 
-<li><a href="kontakt.phtml" >Kontakt oss</a></li>
-<li><a href="reisevilkar.phtml" >Reisevilkår</a></li>
+<ul><li><a href="omoss.html" >Om oss</a></li> 
+<li><a href="kontakt.html" >Kontakt oss</a></li>
+<li><a href="reisevilkar.html" >Reisevilkår</a></li>
 </ul>
 </div>
 
@@ -29,57 +27,59 @@ session_start();
 <div class="menybox">
 <img id="itravel" src="headbox.png" alt="Head"   /> 
 
-<table id="menytabell">
-<form action="" method="get">
-<tr>
-<td><input class="meny" type="submit" value="    Hjem    " name="hjem"/></td>
-<td><input class="meny" type="submit" value="  Fisketurer  " name="fisk"/></td>
-<td><input class="meny" type="submit" value="   Surfing   " name="surf"/></td>
-<td><input class="meny" type="submit" value="  Skiferier  " name="ski"/></td>
-<td><input class="meny" type="submit" value="Fotballturer " name="fotball"/></td>
-</tr>
-</form>
+<div id="meny">
+<ul>
+<li><a href="index.phtml">Hjem</a></li>
+</ul>
+<ul>
+<li><a href="#">Fisketurer</a>
+<ul>
+<li><a href="lofoten.html">Lofoten</a></li>
+<li><a href="florida.html">Florida</a></li>
+<li><a href="australiafisk.html">Australia</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><a href="#">Surfing</a>
+<ul>
+<li><a href="bali.html">Bali</a></li>
+<li><a href="australia.html">Australia</a></li>
+<li><a href="hawaii.html">Hawaii</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong><a style="background: #CCC;" href="#">Skiferie</a></strong>
+<ul>
+<li><a href="sveits.html">Sveits</a></li>
+<li><a href="usa.html">USA</a></li>
+<li><a href="italia.html">Italia</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><a href="#">Fotballtur</a>
+<ul>
+<li><a href="england.html">England</a></li>
+<li><a href="spania.html">Spania</a></li>
+<li><a href="argentina.html">Argentina</a></li>
+</ul>
+</li>
+</ul>
 
 
-<?php
-if (isset($_REQUEST["hjem"]))
-{
-	$_SESSION["filnavn"]="italia.phtml";
-    	include "nedremeny/hjem.phtml";
-}
-
-if (isset($_REQUEST["fisk"]))
-{
-    $_SESSION["filnavn"]="italia.phtml";
-	include "nedremeny/fisk.phtml";
-
-}
-
-if (isset($_REQUEST["surf"]))
-{
-     $_SESSION["filnavn"]="italia.phtml";
-	include "nedremeny/surf.phtml";
-}
-if (isset($_REQUEST["ski"]))
-{
-     $_SESSION["filnavn"]="italia.phtml";
-	include "nedremeny/ski.phtml";
-}
-if (isset($_REQUEST["fotball"]))
-{
-    $_SESSION["filnavn"]="italia.phtml";
-	include "nedremeny/fotball.phtml";
-}
-?>
-</table>
+</div>
 </div>
 
-
+<div class="overtextmidt">
 <h2>Skiferie i Italia</h2>
+</div>
 <div id="textmidt">
 <p> I italia kan vi tilby en fantastisk tur til <a href="http://www.dolomitisuperski.com/en-US/ski-holidays-11EN.html">Dolomiti Superski</a>, et enormt skianlegg med 1.220 km løyper som strekker seg over 12 regioner i Italia. </p>
 <p>De 450 heisene er knyttet sammen i et frodig fellesskap, planlagt og utviklet gjennom år, knyttet sammen til en lang lenke, eller kanskje vi skal si en gyllen ring. For når solen skinner, og det gjør den ganske ofte her, er Dolomiti Super Ski en storslått ring av heiser og bakker som fører ski- og brettfolket gjennom daler og rundt fjell, på en tur så lang som du nesten bare kan ønske deg. <p>Ett heiskort er nok, det er moderne og elektronisk og puttes i innerlomma og vips! ligger Dolomittene for dine føtter. Forøvrig bør man holde hode og øyne høyt, Dolomittene er blant de mest fascinerende fjellene denne kloden har å by på: forrevne, ville, rødlige i fargen.
  </p>
+ <p><a href="index.phtml">Bestill din reise her</a></p>
 </div>
 
 <img id="bildevenstre" src="italiasella.jpg" alt="Del av Dolomites Super Ski"/>

@@ -18,9 +18,9 @@ session_start();
 
 
 <div id="overbodybox">
-<ul><li><a href="omoss.phtml" >Om oss</a></li> 
-<li><a href="kontakt.phtml" >Kontakt oss</a></li>
-<li><a href="reisevilkar.phtml" >Reisevilkår</a></li>
+<ul><li><a href="omoss.html" >Om oss</a></li> 
+<li><a href="kontakt.html" >Kontakt oss</a></li>
+<li><a href="reisevilkar.html" >Reisevilkår</a></li>
 </ul>
 </div>
 
@@ -29,8 +29,8 @@ session_start();
 <div class="menybox">
 <img id="itravel" src="headbox.png" alt="Head"   /> 
 
-<table id="menytabell">
 <form action="" method="get">
+<table id="menytabell">
 <tr>
 <td><input class="meny" type="submit" value="    Hjem    " name="hjem"/></td>
 <td><input class="meny" type="submit" value="  Fisketurer  " name="fisk"/></td>
@@ -38,7 +38,7 @@ session_start();
 <td><input class="meny" type="submit" value="  Skiferier  " name="ski"/></td>
 <td><input class="meny" type="submit" value="Fotballturer " name="fotball"/></td>
 </tr>
-</form>
+
 
 
 <?php
@@ -72,6 +72,7 @@ if (isset($_REQUEST["fotball"]))
 }
 ?>
 </table>
+</form>
 </div>
 
 

@@ -1,6 +1,4 @@
-<?php
-session_start();
-?>
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -18,9 +16,9 @@ session_start();
 
 
 <div id="overbodybox">
-<ul><li><a href="omoss.phtml" >Om oss</a></li> 
-<li><a href="kontakt.phtml" >Kontakt oss</a></li>
-<li><a href="reisevilkar.phtml" >Reisevilkår</a></li>
+<ul><li><a href="omoss.html" >Om oss</a></li> 
+<li><a href="kontakt.html" >Kontakt oss</a></li>
+<li><a href="reisevilkar.html" >Reisevilkår</a></li>
 </ul>
 </div>
 
@@ -29,56 +27,55 @@ session_start();
 <div class="menybox">
 <img id="itravel" src="headbox.png" alt="Head"   /> 
 
-<table id="menytabell">
-<form action="" method="get">
-<tr>
-<td><input class="meny" type="submit" value="    Hjem    " name="hjem"/></td>
-<td><input class="meny" type="submit" value="  Fisketurer  " name="fisk"/></td>
-<td><input class="meny" type="submit" value="   Surfing   " name="surf"/></td>
-<td><input class="meny" type="submit" value="  Skiferier  " name="ski"/></td>
-<td><input class="meny" type="submit" value="Fotballturer " name="fotball"/></td>
-</tr>
-</form>
+<div id="meny">
+<ul>
+<li><a href="index.phtml">Hjem</a></li>
+</ul>
+<ul>
+<li><a href="#">Fisketurer</a>
+<ul>
+<li><a href="lofoten.html">Lofoten</a></li>
+<li><a href="florida.html">Florida</a></li>
+<li><a href="australiafisk.html">Australia</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><a href="#">Surfing</a>
+<ul>
+<li><a href="bali.html">Bali</a></li>
+<li><a href="australia.html">Australia</a></li>
+<li><a href="hawaii.html">Hawaii</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><a href="#">Skiferie</a>
+<ul>
+<li><a href="sveits.html">Sveits</a></li>
+<li><a href="usa.html">USA</a></li>
+<li><a href="italia.html">Italia</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong><a style="background: #CCC;" href="#">Fotballtur</a></strong>
+<ul>
+<li><a href="england.html">England</a></li>
+<li><a href="spania.html">Spania</a></li>
+<li><a href="argentina.html">Argentina</a></li>
+</ul>
+</li>
+</ul>
 
 
-<?php
-if (isset($_REQUEST["hjem"]))
-{
-	$_SESSION["filnavn"]="england.phtml";
-    	include "nedremeny/hjem.phtml";
-}
-
-if (isset($_REQUEST["fisk"]))
-{
-    $_SESSION["filnavn"]="england.phtml";
-	include "nedremeny/fisk.phtml";
-
-}
-
-if (isset($_REQUEST["surf"]))
-{
-     $_SESSION["filnavn"]="england.phtml";
-	include "nedremeny/surf.phtml";
-}
-if (isset($_REQUEST["ski"]))
-{
-     $_SESSION["filnavn"]="england.phtml";
-	include "nedremeny/ski.phtml";
-}
-if (isset($_REQUEST["fotball"]))
-{
-    $_SESSION["filnavn"]="england.phtml";
-	include "nedremeny/fotball.phtml";
-}
-?>
-</table>
+</div>
 </div>
 
-<div id="overskriftfotball">
+<div class="overtextmidt">
 <h2>Fotball i England</h2>
 </div>
-<img id="pllogo" src="premierleague.jpg" alt="PremierLeague"/>
-<img id="pllogo2" src="premierleague.jpg" alt="PremierLeague"/>
+
 <div id="textmidt">
 
 <!--- bildene er hentet fra Wikipedia http://en.wikipedia.org/wiki/File:Old_Trafford_inside_20060726_1.jpg, 
@@ -88,6 +85,7 @@ og med de mest lidenskapelige supporterne</p>
 <p>iTravel kan tilby deg en komplett pakke, med fly, kampbilletter og hotell, på alle kampene i Premier League.</p>
 <p>Vi kan også tilby pakker for kamper i lavere divisjoner i England, så om det er en spesiell kamp du har lyst til å se, er det
 bare å sende oss en mail, så skal vi se hva vi får til!</p>
+<p><a href="index.phtml">Bestill din reise her</a></p>
 </div>
 <br/><br />
 <img id="bildevenstre" src="oldtrafford.jpg" alt="Old Trafford" /> 

@@ -1,6 +1,4 @@
-<?php
-session_start();
-?>
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -18,9 +16,9 @@ session_start();
 
 
 <div id="overbodybox">
-<ul><li><a href="omoss.phtml" >Om oss</a></li> 
-<li><a href="kontakt.phtml" >Kontakt oss</a></li>
-<li><a href="reisevilkar.phtml" >Reisevilkår</a></li>
+<ul><li><a href="omoss.html" >Om oss</a></li> 
+<li><a href="kontakt.html" >Kontakt oss</a></li>
+<li><a href="reisevilkar.html" >Reisevilkår</a></li>
 </ul>
 </div>
 
@@ -29,52 +27,51 @@ session_start();
 <div class="menybox">
 <img id="itravel" src="headbox.png" alt="Head"   /> 
 
-<table id="menytabell">
-<form action="" method="get">
-<tr>
-<td><input class="meny" type="submit" value="    Hjem    " name="hjem"/></td>
-<td><input class="meny" type="submit" value="  Fisketurer  " name="fisk"/></td>
-<td><input class="meny" type="submit" value="   Surfing   " name="surf"/></td>
-<td><input class="meny" type="submit" value="  Skiferier  " name="ski"/></td>
-<td><input class="meny" type="submit" value="Fotballturer " name="fotball"/></td>
-</tr>
-</form>
+<div id="meny">
+<ul>
+<li><a href="index.phtml">Hjem</a></li>
+</ul>
+<ul>
+<li><a href="#">Fisketurer</a>
+<ul>
+<li><a href="lofoten.html">Lofoten</a></li>
+<li><a href="florida.html">Florida</a></li>
+<li><a href="australiafisk.html">Australia</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><a href="#">Surfing</a>
+<ul>
+<li><a href="bali.html">Bali</a></li>
+<li><a href="australia.html">Australia</a></li>
+<li><a href="hawaii.html">Hawaii</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong><a style="background: #CCC;" href="#">Skiferie</a></strong>
+<ul>
+<li><a href="sveits.html">Sveits</a></li>
+<li><a href="usa.html">USA</a></li>
+<li><a href="italia.html">Italia</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><a href="#">Fotballtur</a>
+<ul>
+<li><a href="england.html">England</a></li>
+<li><a href="spania.html">Spania</a></li>
+<li><a href="argentina.html">Argentina</a></li>
+</ul>
+</li>
+</ul>
 
 
-<?php
-if (isset($_REQUEST["hjem"]))
-{
-	$_SESSION["filnavn"]="usa.phtml";
-    	include "nedremeny/hjem.phtml";
-}
+</div></div>
 
-if (isset($_REQUEST["fisk"]))
-{
-    $_SESSION["filnavn"]="usa.phtml";
-	include "nedremeny/fisk.phtml";
-
-}
-
-if (isset($_REQUEST["surf"]))
-{
-     $_SESSION["filnavn"]="usa.phtml";
-	include "nedremeny/surf.phtml";
-}
-if (isset($_REQUEST["ski"]))
-{
-     $_SESSION["filnavn"]="usa.phtml";
-	include "nedremeny/ski.phtml";
-}
-if (isset($_REQUEST["fotball"]))
-{
-    $_SESSION["filnavn"]="usa.phtml";
-	include "nedremeny/fotball.phtml";
-}
-?>
-</table>
-</div>
-
-<div id="overskriftfotball">
+<div class="overtextmidt">
 <h2>Skiferie i USA</h2>
 </div>
 <div id="usatext">
@@ -84,7 +81,8 @@ Deer Valley ligger i den historiske gruvebyen Park City i Utah, ca 5 mil fra Sal
 <p><strong>Breckenridge, Colorado</strong><br />
 Breckenridge har vært det mest populære ski anlegget i Nord-Amerika de siste åra. I 2007 – 2008 kunne de skryte av 1,63 millioner besøkende, noe som gjør de til det mest populære reisemålet i Nord-Amerika. Anlegget kan skimte med 155 løyper, så om du ser fram til en dag fri fra løypene eller om du leter etter litt alternativt eventyr, så har Breckenridge like mye å tilby utenfor løypene som i løypene. </p>
 <p><strong>Alyeska, Alaska</strong><br />
-Alpin kjøring I Alaska er sinnsykt; høye fjelltopper som er på same nivå som havet gjør at Alaska har noe av de beste forholdene som Moder Natur kan tilby. Ski kjørere og snowboardere har flere valg for å kjøre alpint 45 minutter fra sentrum av Anchorage – alle med fantastisk utsikt og det beste terrenget du kan finne. Vi vil anbefale Alyeska Ski Resort, en fantastisk park der du har alt du trenger, inkludert overnatting på <a href="http://www.alyeskaresort.com/hotel/index.aspx">Hotel Alyeska</a>.</p></div>
+Alpin kjøring I Alaska er sinnsykt; høye fjelltopper som er på same nivå som havet gjør at Alaska har noe av de beste forholdene som Moder Natur kan tilby. Ski kjørere og snowboardere har flere valg for å kjøre alpint 45 minutter fra sentrum av Anchorage – alle med fantastisk utsikt og det beste terrenget du kan finne. Vi vil anbefale Alyeska Ski Resort, en fantastisk park der du har alt du trenger, inkludert overnatting på <a href="http://www.alyeskaresort.com/hotel/index.aspx">Hotel Alyeska</a>.</p>
+<p><a href="index.phtml">Bestill din reise her</a></p></div>
 <img id="usavenstre" src="breckenridge.jpg" alt="Breckenridge"/>
 <img id="usahoyre" src="deervalley.jpg" alt="Deer Valley Ski Resort" />
 <div id="usatextvenstre"><p><em>Breckenridge, en av de mange toppene</em></p></div> 

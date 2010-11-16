@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -10,13 +7,11 @@ session_start();
 	<link rel="stylesheet" href="css1.css"/>
 	
 
-	<title>iTravel</title>
+	<title>iTravel - Kontakt oss</title>
     <link rel="icon" href="logo.jpg" type="image/x-icon" />
-<link rel="shortcut icon" href="logo.jpg" type="image/x-icon" />
-
+        <link rel="shortcut icon" href="logo.jpg" type="image/x-icon" />
 </head>
 <body>
-
 
 <div id="overbodybox">
 <ul><li><a href="omoss.html" >Om oss</a></li> 
@@ -29,10 +24,9 @@ session_start();
 <div class="bodybox">
 <div class="menybox">
 <img id="itravel" src="headbox.png" alt="Head"   /> 
-
 <div id="meny">
 <ul>
-<li><strong><a style="background: #CCC;" href="index.phtml">Hjem</a></strong></li>
+<li><a href="index.phtml">Hjem</a></li>
 </ul>
 <ul>
 <li><a href="#">Fisketurer</a>
@@ -77,35 +71,39 @@ session_start();
 
 
 <br/><br/>
-<p>Er du lei av allminnelige reisemål der du bare ligger og kjeder deg på stranda hele ferien? 
-Ønsker du å gjøre noe nytt i ferien? iTravel arrangerer reiser for den mer eventyrlystne som ønsker
- å oppleve mer i ferien. Velkommen til iTravel - vi er her for deg!</p>
-<img id="balisurf" src="balisurf.png" alt="bali" />
+<p>Om det er noe du lurer på, er  det bare å kontakte oss!</p>
+<p>Fyll ut skjemaet under, så svarer vi deg så fort vi kan.</p>
+<p>Mvh iTravel</p>
+<hr/>
 
 
 
-<div id="bestilling">
-<?php
+<div id="skjema">
+<form action="mailsendt.phtml" method="post">
+Navn:<br />
+<input type="text" name="navn"/>*<br /><br />
+Telefonnummer:<br />
+<input type="text" name="telefonnummer"   />*<br /><br />
+E-post:<br />
+<input type="text" name="epost"  />*<br /><br />
+<p>Velg fra listen under, hvilken kategori henvendelsen gjelder.<br /></p>
 
+    
+    <select size="1" name="henvendelse">
+            <option>Destinasjoner</option>
+            <option>Priser</option>
+            <option>Bestilling</option>
+            <option>Avbestilling</option>
+            <option>Annet</option>
+       </select>
 
-Mail ("gruppe28@hotmail.com","Bestilling","Navn: ".$_SESSION["fornavn"]." ".$_SESSION["etternavn"]."\r\n".
-	  "Tur: ".$_SESSION["fisketur"].$_SESSION["surf"].$_SESSION["fotballtur"].$_SESSION["skiferie"]."\r\n".
-	  "Utreise: ".$_SESSION["dag"]."/".$_SESSION["dato"]."/".$_SESSION["aar"]."\r\n".
-	  "Hjemreise: ".$_SESSION["daghjem"]."/".$_SESSION["datohjem"]."/".$_SESSION["aarhjem"]."\r\n".
-	  "Hotellnetter: ".$_SESSION["hotellnetter"]."\r\n".
-	  "Antall: ".$_SESSION["antall"]."\r\n".
-	  "Adresse: ".$_SESSION["adresse"]." ".$_SESSION["postnr"]." ".$_SESSION["poststed"]."\r\n".
-	  "Tlf: ".$_SESSION["tlf"]."\r\n".
-	  "Epost: ".$_SESSION["epost"]."\r\n".
-	  "Pris: ".$_SESSION["pris"],"From: ".$_SESSION["epost"]);
-
-?>
-<p>Takk <?php echo $_SESSION["fornavn"] ?>. Din bestilling har blitt sendt til oss. Klikk <a href="index.phtml">her</a> 
-	for å gå tilbake til forsiden.</p>
+<br /> <br />
+<textarea name="beskjed"   cols="30" rows="5">   skriv din kommentar her: </textarea>  <br />
+<input type="submit" value="Send" name="knapp"/>
+</form>
 
 
 </div>
-
 </div>
 
 </body>

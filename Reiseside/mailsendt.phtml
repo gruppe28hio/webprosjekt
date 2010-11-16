@@ -85,8 +85,10 @@ if(isset($_REQUEST["knapp"]))
 if (($_REQUEST["navn"]=="")or($_REQUEST["telefonnummer"]=="")
 or($_REQUEST["epost"]==""))
 {
-    echo "<strong>Du må fylle ut alle feltene merket med *!</strong>";
-}
+    echo "<strong>Du må fylle ut alle feltene merket med * <br/></br/> </strong>";
+    echo "<br/><br/>";
+    echo "<a href='kontakt.phtml'>Tilbake</a>";
+}   
 else 
     
 {

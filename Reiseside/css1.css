@@ -133,8 +133,17 @@ input.nedremeny
 
 #form
 {
-    float: left;
-    text-align: left;
+
+    margin-left: 31.5%;
+    margin-right: 43.5%;
+    margin-top: 4%;
+    border: 0.2em solid black;
+    width: 37%;
+    height: 50%;
+    padding-top: 2%;
+    position: relative;
+    background-color: #C8C8C8;  
+    
 }
 
 #reisevilkar

@@ -1,6 +1,6 @@
 body
 {  
-    background-color: black;
+    background-color: #3399FF;
     
 }
 
@@ -61,7 +61,8 @@ body
     width: 80%;
     text-align: center; 
     margin-left: 9%;
-    margin-right: 9%;     
+    margin-right: 9%; 
+    background-color: #FFFFCC;    
 }
 
 input.meny 
@@ -72,6 +73,7 @@ input.meny
     color: blue;
     width:100%;
     text-align: center;
+    
 }
 
 input.nedremeny
@@ -81,6 +83,7 @@ input.nedremeny
     color: black;
     border-color: black;
     width: 100%;
+    
 }
 
 #menytabell
@@ -91,23 +94,18 @@ input.nedremeny
     right: 25%;
     margin-top: -3%;
     text-align: center;
+    
 }
 
-#Berlin
-{
-    width: 20%;
-    position: relative;
-    z-index: 9;
-    top: 4%;
-    right: -20%;
-}
 
-#Bali
+
+#balisurf
 {
-    width: 20%;
-    position: relative;
-    top: 4%;
-    right: 20%;
+    height: 40%;
+    width: 50%;
+    float: right;
+    margin-top: 4%;
+    margin-right: 8%;
 }
 
 .lukk
@@ -291,4 +289,38 @@ input.nedremeny
 {
     float: right;
     margin-right: 15%;
+}
+
+#bestilling
+{
+    margin-left: 2%;
+    z-index: 17;
+    margin-top: 4%;
+    border: 0.2em solid black;
+    width: 37%;
+    height: 40%;
+    padding-top: 2%;
+    position: relative;
+    background-color: #C8C8C8;
+    
+}
+
+#bestilling2
+{
+    position: relative;
+    z-index: 17;
+    margin-top: 4%;
+    border: 0.2em solid black;
+    width: 38%;
+    height: 57%;
+    padding-top: 2%;
+    position: relative;
+    background-color: #C8C8C8;
+}
+#bestillher
+{
+    position: relative;
+    z-index: 2;
+    top: 4%;
+    
 }

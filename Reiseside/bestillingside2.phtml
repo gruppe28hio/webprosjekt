@@ -1,6 +1,92 @@
 <?php
 session_start();
 ?>
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+	<meta name="description" content="Hovedside - reiseside."/>
+	<meta name="author" content="Barbro M. Klashaugen, Marius Karlsen, Dan Eig, Alexander Paulsen"/>
+	<link rel="stylesheet" href="css1.css"/>
+	
+
+	<title>iTravel</title>
+    <link rel="icon" href="logo.jpg" type="image/x-icon" />
+<link rel="shortcut icon" href="logo.jpg" type="image/x-icon" />
+
+</head>
+<body>
+
+
+<div id="overbodybox">
+<ul><li><a href="omoss.phtml" >Om oss</a></li> 
+<li><a href="kontakt.phtml" >Kontakt oss</a></li>
+<li><a href="reisevilkar.phtml" >Reisevilkår</a></li>
+</ul>
+</div>
+
+
+<div class="bodybox">
+<div class="menybox">
+<img id="itravel" src="headbox.png" alt="Head"   /> 
+
+<table id="menytabell">
+<form action="" method="get">
+<tr>
+<td><input class="meny" type="submit" value="    Hjem    " name="hjem"/></td>
+<td><input class="meny" type="submit" value="  Fisketurer  " name="fisk"/></td>
+<td><input class="meny" type="submit" value="   Surfing   " name="surf"/></td>
+<td><input class="meny" type="submit" value="  Skiferier  " name="ski"/></td>
+<td><input class="meny" type="submit" value="Fotballturer " name="fotball"/></td>
+</tr>
+</form>
+
+
+<?php
+if (isset($_REQUEST["hjem"]))
+{
+	$_SESSION["filnavn"]="bestillingside2.phtml";
+    	include "nedremeny/hjem.phtml";
+}
+
+if (isset($_REQUEST["fisk"]))
+{
+    $_SESSION["filnavn"]="bestillingside2.phtml";
+	include "nedremeny/fisk.phtml";
+
+}
+
+if (isset($_REQUEST["surf"]))
+{
+     $_SESSION["filnavn"]="bestillingside2.phtml";
+	include "nedremeny/surf.phtml";
+}
+if (isset($_REQUEST["ski"]))
+{
+     $_SESSION["filnavn"]="bestillingside2.phtml";
+	include "nedremeny/ski.phtml";
+}
+if (isset($_REQUEST["fotball"]))
+{
+    $_SESSION["filnavn"]="bestillingside2.phtml";
+	include "nedremeny/fotball.phtml";
+}
+?>
+</table>
+</div>
+
+
+<br/><br/>
+<p>Er du lei av allminnelige reisemål der du bare ligger og kjeder deg på stranda hele ferien? 
+Ønsker du å gjøre noe nytt i ferien? iTravel arrangerer reiser for den mer eventyrlystne som ønsker
+ å oppleve mer i ferien. Velkommen til iTravel - vi er her for deg!</p>
+<img id="balisurf" src="balisurf.png" alt="bali" />
+
+
+<div id="bestilling2">
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
@@ -20,7 +106,7 @@ echo $dato;
 <td><?php 
 if ($_SESSION["antall"] == "")
 {
-echo "Velg antall reisende og trykk oppdater <a href='bestillingsskjema.php'>tilbake</a>";
+echo "Velg antall reisende og trykk oppdater <a href='index.php'>tilbake</a>";
 }
 else
 {
@@ -34,7 +120,7 @@ $pris = 0;
 $hotell= 0;
 		if ($_SESSION["fisketur"] =="" and $_SESSION["surf"] =="" and $_SESSION["skiferie"] =="" and $_SESSION["fotballtur"] =="")
 		{
-			echo "Velg et reisemål <a href='bestillingsskjema.php'>tilbake</a>";
+			echo "Velg et reisemål <a href='index.phtml'>tilbake</a>";
 		}
 	 if (isset($_SESSION["fisketur"]))
 	 {
@@ -79,7 +165,7 @@ $hotell= 0;
 		 echo $_SESSION["skiferie"]." ";
 		if ($_SESSION["ski"] == "Ski i Sveits")
 		{
-		$pris += 1299;
+		$pris += 4575;
 		$hotell += $_SESSION["hotellnetter"] * 1299;
 		}
 		if ($_SESSION["ski"] == "Ski i USA")
@@ -126,7 +212,7 @@ $pris= $pris*$_SESSION["antall"];
 <td><?php 
 if ($_SESSION["dag"] =="" or $_SESSION["dato"] =="" or $_SESSION["aar"] =="")
 {
-	echo "Fyll inn reisedato <a href='bestillingsskjema.php'>tilbake</a>";
+	echo "Fyll inn reisedato <a href='index.phtml'>tilbake</a>";
 }
 else { 
 echo $_SESSION["dag"]."/".$_SESSION["dato"]."/".$_SESSION["aar"]; } ?></td>
@@ -136,7 +222,7 @@ echo $_SESSION["dag"]."/".$_SESSION["dato"]."/".$_SESSION["aar"]; } ?></td>
 <td><?php 
 if ($_SESSION["daghjem"] =="" or $_SESSION["datohjem"] =="" or $_SESSION["aarhjem"] =="")
 {
-	echo "Fyll inn hjemreise <a href='bestillingsskjema.php'>tilbake</a>";
+	echo "Fyll inn hjemreise <a href='index.phtml'>tilbake</a>";
 }
 else { 
 echo $_SESSION["daghjem"]."/".$_SESSION["datohjem"]."/".$_SESSION["aarhjem"]; } ?></td>
@@ -146,7 +232,7 @@ echo $_SESSION["daghjem"]."/".$_SESSION["datohjem"]."/".$_SESSION["aarhjem"]; } 
 <td><?php
 if ($_SESSION["hotellnetter"] == "")
 {
-	echo "Fyll inn antall netter du vil ha på hotell <a href='bestillingsskjema.php'>tilbake</a>";
+	echo "Fyll inn antall netter du vil ha på hotell <a href='index.phtml'>tilbake</a>";
 }
 else {
 	echo $_SESSION["hotellnetter"];
@@ -157,7 +243,7 @@ else {
 <td>Navn: </td>
 <td><?php if ($_REQUEST["fornavn"] =="" or $_REQUEST["etternavn"] == "")
 	{
-		echo "Fyll inn fullt navn <a href='bestillingsskjema.php'>tilbake</a>";
+		echo "Fyll inn fullt navn <a href='index.phtml'>tilbake</a>";
 	}
 	else
 	{
@@ -169,7 +255,7 @@ else {
 <td><?php
 	if ($_REQUEST["adresse"] == "")
 	{
-		echo "Fyll inn adresse <a href='bestillingsskjema.php'>tilbake</a>";
+		echo "Fyll inn adresse <a href='index.phtml'>tilbake</a>";
 		
 	}
 	else
@@ -183,7 +269,7 @@ else {
 <td><?php
 	if ($_REQUEST["postnr"] == "")
 	{
-		echo "Fyll inn postnr <a href='bestillingsskjema.php'>tilbake</a>";
+		echo "Fyll inn postnr <a href='index.phtml'>tilbake</a>";
 		
 	}
 	else
@@ -197,7 +283,7 @@ else {
 <td><?php
 	if ($_REQUEST["poststed"] == "")
 	{
-		echo "Fyll inn poststed <a href='bestillingsskjema.php'>tilbake</a>";
+		echo "Fyll inn poststed <a href='bestillingsskjema.phtml'>tilbake</a>";
 		
 	}
 	else
@@ -211,7 +297,7 @@ else {
 <td><?php
 	if ($_REQUEST["tlf"] == "")
 	{
-		echo "Fyll inn telefonnummer <a href='bestillingsskjema.php'>tilbake</a>";
+		echo "Fyll inn telefonnummer <a href='index.phtml'>tilbake</a>";
 		
 	}
 	else
@@ -225,7 +311,7 @@ else {
 <td><?php
 	if ($_REQUEST["epost"] == "")
 	{
-		echo "Fyll inn epost <a href='bestillingsskjema.php'>tilbake</a>";
+		echo "Fyll inn epost <a href='index.phtml'>tilbake</a>";
 		
 	}
 	else
@@ -247,15 +333,23 @@ else {
 	$_SESSION["pris"] = $pris;
 	?>
 <tr>
-<td><a href="bestillingsskjema.php">Tilbake</a></td>
+<td><a href="index.phtml">Tilbake</a></td>
 </tr>
-<form action="send.php" method="post">
+<form action="send.phtml" method="post">
 <tr>
 <td><input type="submit" name="send" value="Send bestilling" /></td>
 </tr>
 </form>
 </table>
 
+
+</body>
+</html>
+
+
+</div>
+
+</div>
 
 </body>
 </html>

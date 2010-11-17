@@ -89,6 +89,7 @@ session_start();
 
 <form action="bestillingside1.phtml" method="post">
 <table>
+
 <tr>
 <td>Antall Reisende</td>
 <td><select size="1" name="antall">
@@ -114,7 +115,7 @@ session_start();
 <br/>
 <table>
 <tr>
-<td>Tur</td>
+<td></td>
 <td></td>
 <td>Fisketur</td>
 <td>Surfing</td>
@@ -161,9 +162,10 @@ session_start();
 <br/>
 <table>
 <tr>
-<td>Reisedato</td>
+<td>Utreise</td>
 </tr>
 <tr>
+
 <td><select size="1" name="dag" >
 	<option> </option>
     <option value="1">1</option>
@@ -291,6 +293,7 @@ session_start();
 <td>Hotellnetter</td>
 </tr>
 <tr>
+
 <td>
 <select size="1" name="hotellnetter" >
 	<option> </option>
@@ -328,11 +331,13 @@ session_start();
     </select>
 </td>
 </tr>
-<table>
+</table>
+<table id="textbox">
 <tr>
 <td><textarea cols="30" rows="5" name="melding">Skreddersy din bestilling</textarea></td>
 </tr>
 </table>
+<table>
 <tr>
 <td><input type="submit" name="neste" value="Neste" /></td>
 </tr>

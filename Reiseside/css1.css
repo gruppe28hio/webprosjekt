@@ -3,7 +3,6 @@ body
     background-color: #3399FF;
     
 }
-
 .menybox
 {
     height:7em;
@@ -12,15 +11,15 @@ body
 	margin-top: -2%;
 	margin-right: -1.3%;
 	margin-left: -1.3%;
-    text-align: center; 
+    text-align: center;
+    
+    
 }
 #meny
-{
-
-	position: relative;
-	left: 25%;
-	top: -32%;
-    z-index: 10;
+{   
+    margin-top: -3.7%;
+    margin-left: 25%;
+    z-index: 20;
 }
 #meny ul
 {
@@ -48,7 +47,7 @@ body
 	display:block;
 	color: #00F;
 	border: 1px solid #000;
-	text-shadow: 1px 1px 1px #FFF;
+	
 }
 #meny ul ul
 {
@@ -70,6 +69,7 @@ body
 	
  background: #00F;
  color: #FFF;
+
 }
 #meny a:hover
 {
@@ -162,20 +162,7 @@ body
     text-align: center;
 }
 
-#skjema
-{
 
-    margin-left: 31.5%;
-    margin-right: 43.5%;
-    margin-top: 4%;
-    border: 0.2em solid black;
-    width: 37%;
-    height: 50%;
-    padding-top: 2%;
-    position: relative;
-    background-color: #C8C8C8;  
-    
-}
 
 #reisevilkar
 {
@@ -188,10 +175,7 @@ body
     padding-right: 10%;
 }
 
-#overskriftfotball
-{
-    
-}
+
 
 #bildevenstre
 {
@@ -215,8 +199,7 @@ body
 
 .overtextmidt
 {
-    position: absolute;
-    right: 44%;
+    text-align: center;   
     
 }
 #textmidt
@@ -224,7 +207,7 @@ body
     margin-left: 7%;
     margin-right: 7%;
     text-align: left;
-    margin-top: 8%;
+    margin-top: 3%;
 }
 
 #textundervenstre
@@ -251,7 +234,7 @@ body
     margin-left: 7%;
     margin-right: 7%;
     text-align: left;
-    margin-top: 8%;
+    margin-top: 2%;
 }
 
 #usavenstre
@@ -299,6 +282,15 @@ body
     
 }
 
+.tabellbestill
+{
+   float: left;
+}
+
+.tabellbestill2
+{
+    float: left;
+}
 #bestilling1
 {
     margin-left: 2%;
@@ -312,7 +304,10 @@ body
     background-color: #C8C8C8;
     
 }
-
+#textbox
+{
+    padding-left: 3.6%;
+}
 #bestilling2
 {
     position: relative;
@@ -320,9 +315,17 @@ body
     margin-top: 4%;
     border: 0.2em solid black;
     width: 38%;
-    height: 55%;
+    height: 58%;
     padding-top: 2%;
     background-color: #C8C8C8;
+    margin-left: 2%;
+    text-align: left;
+    padding-left: 1%;
+}
+
+#hr
+{
+  padding-right: 2%; 
 }
 #bestillher
 {

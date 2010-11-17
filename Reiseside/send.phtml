@@ -97,8 +97,8 @@ Mail ("gruppe28@hotmail.com","Bestilling","Navn: ".$_SESSION["fornavn"]." ".$_SE
 	  "Adresse: ".$_SESSION["adresse"]." ".$_SESSION["postnr"]." ".$_SESSION["poststed"]."\r\n".
 	  "Tlf: ".$_SESSION["tlf"]."\r\n".
 	  "Epost: ".$_SESSION["epost"]."\r\n".
-	  "Pris: ".$_SESSION["pris"],"From: ".$_SESSION["epost"]);
-
+	  "Pris: ".$_SESSION["pris"]."\r\n".
+      "Kommentar: ".$_SESSION["melding"], "From: ".$_SESSION["epost"]);
 ?>
 <p>Takk <?php echo $_SESSION["fornavn"] ?>. Din bestilling har blitt sendt til oss. Klikk <a href="index.phtml">her</a> 
 	for å gå tilbake til forsiden.</p>

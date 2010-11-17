@@ -90,11 +90,13 @@ $dato = date("d/m/Y H:i");
 echo $dato;
 ?>
 <h3>Her er informasjonen vi har om din bestilling:</h3>
+<div id="hr">
 <hr/>
+</div>
 <table>
 <tr>
 <td>Antall reisende: </td>
-<td><?php 
+<td><div class="tabellbestill2"><?php 
 if ($_SESSION["antall"] == "")
 {
 echo "Velg antall reisende og trykk oppdater <a href='index.php'>tilbake</a>";
@@ -102,11 +104,11 @@ echo "Velg antall reisende og trykk oppdater <a href='index.php'>tilbake</a>";
 else
 {
 echo $_SESSION["antall"];
-}?></td>
+}?></div></td>
 </tr>
 <tr>
 <td>Reisesmål: </td>
-<td><?php
+<td><div class="tabellbestill2"><?php
 $pris = 0;
 $hotell= 0;
 		if ($_SESSION["fisketur"] =="" and $_SESSION["surf"] =="" and $_SESSION["skiferie"] =="" and $_SESSION["fotballtur"] =="")
@@ -196,31 +198,31 @@ $pris+=120;
 $pris+=$pris*1.03;
 $pris= $pris*$_SESSION["antall"];
 
- ?></td>
+ ?></div></td>
 </tr>
 <tr>
 <td>Reisedato: </td>
-<td><?php 
+<td><div class="tabellbestill2"><?php 
 if ($_SESSION["dag"] =="" or $_SESSION["dato"] =="" or $_SESSION["aar"] =="")
 {
 	echo "Fyll inn reisedato <a href='index.phtml'>tilbake</a>";
 }
 else { 
-echo $_SESSION["dag"]."/".$_SESSION["dato"]."/".$_SESSION["aar"]; } ?></td>
+echo $_SESSION["dag"]."/".$_SESSION["dato"]."/".$_SESSION["aar"]; } ?></div></td>
 </tr>
 <tr>
 <td>Hjemreise: </td>
-<td><?php 
+<td><div class="tabellbestill2"><?php 
 if ($_SESSION["daghjem"] =="" or $_SESSION["datohjem"] =="" or $_SESSION["aarhjem"] =="")
 {
 	echo "Fyll inn hjemreise <a href='index.phtml'>tilbake</a>";
 }
 else { 
-echo $_SESSION["daghjem"]."/".$_SESSION["datohjem"]."/".$_SESSION["aarhjem"]; } ?></td>
+echo $_SESSION["daghjem"]."/".$_SESSION["datohjem"]."/".$_SESSION["aarhjem"]; } ?></div></td>
 </tr>
 <tr>
 <td>Hotellnetter</td>
-<td><?php
+<td><div class="tabellbestill2"><?php
 if ($_SESSION["hotellnetter"] == "")
 {
 	echo "Fyll inn antall netter du vil ha på hotell <a href='index.phtml'>tilbake</a>";
@@ -228,22 +230,22 @@ if ($_SESSION["hotellnetter"] == "")
 else {
 	echo $_SESSION["hotellnetter"];
 }
-?></td>
+?></div></td>
 </tr>
 <tr>
 <td>Navn: </td>
-<td><?php if ($_REQUEST["fornavn"] =="" or $_REQUEST["etternavn"] == "")
+<td><div class="tabellbestill2"><?php if ($_REQUEST["fornavn"] =="" or $_REQUEST["etternavn"] == "")
 	{
 		echo "Fyll inn fullt navn <a href='index.phtml'>tilbake</a>";
 	}
 	else
 	{
 		echo $_REQUEST["fornavn"]." ".$_REQUEST["etternavn"];	
-	}?></td>
+	}?></div></td>
 </tr>
 <tr>
 <td>Adresse: </td>
-<td><?php
+<td><div class="tabellbestill2"><?php
 	if ($_REQUEST["adresse"] == "")
 	{
 		echo "Fyll inn adresse <a href='index.phtml'>tilbake</a>";
@@ -253,11 +255,11 @@ else {
 	{
 		echo $_REQUEST["adresse"];
 	}
-	?></td>
+	?></div></td>
 </tr>
 <tr>
 <td>Postnr: </td>
-<td><?php
+<td><div class="tabellbestill2"><?php
 	if ($_REQUEST["postnr"] == "")
 	{
 		echo "Fyll inn postnr <a href='index.phtml'>tilbake</a>";
@@ -267,11 +269,11 @@ else {
 	{
 		echo $_REQUEST["postnr"];
 	}
-	?></td>
+	?></div></td>
 </tr>
 <tr>
 <td>Poststed: </td>
-<td><?php
+<td><div class="tabellbestill2"><?php
 	if ($_REQUEST["poststed"] == "")
 	{
 		echo "Fyll inn poststed <a href='bestillingsskjema.phtml'>tilbake</a>";
@@ -281,11 +283,11 @@ else {
 	{
 		echo $_REQUEST["poststed"];
 	}
-	?></td>
+	?></div></td>
 </tr>
 <tr>
 <td>Telefon: </td>
-<td><?php
+<td><div class="tabellbestill2"><?php
 	if ($_REQUEST["tlf"] == "")
 	{
 		echo "Fyll inn telefonnummer <a href='index.phtml'>tilbake</a>";
@@ -295,11 +297,11 @@ else {
 	{
 		echo $_REQUEST["tlf"];
 	}
-	?></td>
+	?></div></td>
 </tr>
 <tr>
 <td>E-post</td>
-<td><?php
+<td><div class="tabellbestill2"><?php
 	if ($_REQUEST["epost"] == "")
 	{
 		echo "Fyll inn epost <a href='index.phtml'>tilbake</a>";
@@ -309,9 +311,13 @@ else {
 	{
 		echo $_REQUEST["epost"];
 	}
-	?></td>
+	?></div></td>
     <tr>
-    <td>Pris: </td><td><?php echo $pris." kr"; ?></td>
+    <td>Pris: </td><td><div class="tabellbestill2"><?php echo $pris." kr"; ?></div></td>
+    </tr>
+    
+    <tr>
+    <td>Din kommentar: </td><td><div class="tabellbestill2"><?php echo $_SESSION["melding"]; ?></div></td>
     </tr>
     <?php
 	$_SESSION["fornavn"] = $_REQUEST["fornavn"];
@@ -322,6 +328,7 @@ else {
 	$_SESSION["tlf"] = $_REQUEST["tlf"];
 	$_SESSION["epost"] = $_REQUEST["epost"];
 	$_SESSION["pris"] = $pris;
+    
 	?>
 
 <tr>

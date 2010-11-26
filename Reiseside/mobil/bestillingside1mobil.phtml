@@ -1,0 +1,163 @@
+<?php
+session_start();
+?>
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+	<meta name="description" content="Hovedside - reiseside."/>
+	<meta name="author" content="Barbro M. Klashaugen, Marius Karlsen, Dan Eig, Alexander Paulsen"/>
+	<link rel="stylesheet" href="cssmobil.css"/>
+	
+
+	<title>iTravel</title>
+    <link rel="icon" href="logo.jpg" type="image/x-icon" />
+<link rel="shortcut icon" href="logo.jpg" type="image/x-icon" />
+
+</head>
+<body>
+
+
+<div id="overbodybox">
+<ul><li><a href="omossmobil.html" >Om oss</a></li> 
+<li><a href="kontaktmobil.html" >Kontakt oss</a></li>
+<li><a href="reisevilkarmobil.html" >Reisevilkår</a></li>
+</ul>
+</div>
+
+
+<div class="bodybox">
+<div class="menybox">
+<div id="itraveloverskrift"><h1>iTravel</h1></div> 
+
+<div id="meny">
+<ul>
+<li><strong><a style="background: #CCC;" href="indexmobil.phtml">Hjem</a></strong></li>
+</ul>
+<ul>
+<li><a href="#" style="background:white;">Fisketurer</a>
+<ul>
+<li><a href="lofotenmobil.html" style="background:white;">Lofoten</a></li>
+<li><a href="floridamobil.html" style="background:white;">Florida</a></li>
+<li><a href="australiafiskmobil.html" style="background:white;">Australia</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><a href="#" style="background:white;">Surfing</a>
+<ul>
+<li><a href="balimobil.html" style="background:white;">Bali</a></li>
+<li><a href="australiamobil.html" style="background:white;">Australia</a></li>
+<li><a href="hawaiimobil.html" style="background:white;">Hawaii</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><a href="#" style="background:white;">Skiferie</a>
+<ul>
+<li><a href="sveitsmobil.html" style="background:white;">Sveits</a></li>
+<li><a href="usamobil.html" style="background:white;">USA</a></li>
+<li><a href="italiamobil.html" style="background:white;">Italia</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><a href="#" style="background:white;">Fotballtur</a>
+<ul>
+<li><a href="englandmobil.html" style="background:white;">England</a></li>
+<li><a href="spaniamobil.html" style="background:white;">Spania</a></li>
+<li><a href="argentinamobil.html" style="background:white;">Argentina</a></li>
+</ul>
+</li>
+</ul>
+
+
+</div>
+</div>
+
+
+<br/><br/>
+<p>Er du lei av allminnelige reisemål der du bare ligger og kjeder deg på stranda hele ferien? 
+Ønsker du å gjøre noe nytt i ferien? iTravel arrangerer reiser for den mer eventyrlystne som ønsker
+ å oppleve mer i ferien. Velkommen til iTravel - vi er her for deg!</p>
+<img id="balisurf" src="balisurf.png" alt="bali" />
+
+<div id="bestillher">
+<h3>Bestill her!</h3>
+</div>
+<div id="bestilling1">
+<?php
+if($_REQUEST["dag"] =="" or $_REQUEST["dato"] =="" or $_REQUEST["aar"] =="" or $_REQUEST["daghjem"] =="" or $_REQUEST["datohjem"] =="" or $_REQUEST["aarhjem"] =="") 
+{
+	echo "Du har ikke fylt ut all informasjonen på forrige side";
+}
+if ($_REQUEST["fisketur"] =="" and $_REQUEST["surf"] =="" and $_REQUEST["skiferie"] =="" and $_REQUEST["fotballtur"] =="")
+{
+	echo "<br/>Du har ikke fylt ut hvor du vil reise";
+}
+?>
+<h3>Reiseleders personalia</h3>
+<form action="bestillingside2mobil.phtml" method="post">
+<table>
+<tr>
+<td>Fornavn:</td><td style="color: red;">*</td>
+<td><input type="text" class="tabellbestill" name="fornavn"/></td>
+</tr>
+<tr>
+<td>Etternavn:</td><td style="color: red;">*</td>
+<td><input type="text" class="tabellbestill" name="etternavn"/></td>
+</tr>
+<tr>
+<td>Adresse:</td><td style="color: red;">*</td>
+<td><input type="text" class="tabellbestill" name="adresse"/></td>
+</tr>
+<tr>
+<td>Postnr:</td><td style="color: red;">*</td>
+<td><input type="text" class="tabellbestill" name="postnr" size="2" maxlength="4" /></td>
+</tr>
+<tr>
+<td>Poststed:</td><td style="color: red;">*</td>
+<td><input type="text" class="tabellbestill" name="poststed" size="10"/></td>
+</tr>
+<tr>
+<td>Telefonnr:</td><td style="color: red;">*</td>
+<td><input type="text" class="tabellbestill" name="tlf" size="10"/></td>
+</tr>
+<tr>
+<td>E-post:</td><td style="color: red;">*</td>
+<td><input type="text" class="tabellbestill" name="epost" /></td>
+</tr>
+<tr>
+<td><input type="submit" class="tabellbestill" name="neste" value="Neste" /></td>
+</tr>
+
+</table>
+
+
+</form>
+
+ <?php
+
+
+$_SESSION["antall"] = $_REQUEST["antall"];
+$_SESSION["fisketur"] = $_REQUEST["fisketur"];
+$_SESSION["surf"] = $_REQUEST["surf"];
+$_SESSION["fotballtur"] = $_REQUEST["fotballtur"];
+$_SESSION["skiferie"] = $_REQUEST["skiferie"];
+$_SESSION["dag"] = $_REQUEST["dag"];
+$_SESSION["dato"] = $_REQUEST["dato"];
+$_SESSION["aar"] = $_REQUEST["aar"];
+$_SESSION["daghjem"] = $_REQUEST["daghjem"];
+$_SESSION["datohjem"] = $_REQUEST["datohjem"];
+$_SESSION["aarhjem"] = $_REQUEST["aarhjem"];
+$_SESSION["hotellnetter"] = $_REQUEST["hotellnetter"];
+$_SESSION["melding"] = $_REQUEST["melding"]; 
+ ?>
+
+
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,367 @@
+body
+{  
+    background-image:url('bakgrunn.jpg');
+    
+}
+.menybox
+{
+    height:14%;
+    background: #0066CC;
+	margin-top: -2.4%;
+    margin-left: -1.4%;
+	width: 102.45%;
+    text-align: center;
+   	border: 0.1em solid black;
+    -webkit-border-top-left-radius: 18px;
+	-khtml-border-radius-topleft: 18px;	
+	-moz-border-radius-topleft: 18px;
+	border-top-left-radius: 18px;
+    -webkit-border-top-right-radius: 18px;
+	-khtml-border-radius-topright: 18px;	
+	-moz-border-radius-topright: 18px;
+	border-top-right-radius: 18px;
+
+    
+}
+#meny
+{   
+    
+    margin-left: 25%;
+    margin-top: 8.1%;
+    
+    
+}
+#meny ul
+{
+	margin:0;
+	padding:0;
+	line-height: 30px;
+    
+    
+}
+#meny li
+{
+	margin:0;
+	padding:0;
+	list-style:none;
+	float:left;
+	position:relative;
+	background: none;
+	
+}
+#meny ul li a
+{
+   
+	text-align: center;
+	text-decoration: none;
+	font-family: Verdana, Geneva, sans-serif;
+	height: 30px;
+	width: 110px;
+	display:block;
+	color: #00F;
+	border: 1px solid #000;
+	border-radius: 18px;
+    -moz-border-radius: 18px;
+}
+#meny ul ul
+{
+	position: absolute;
+	visibility:hidden;
+	top: 32px;
+    
+}
+#meny ul li:hover ul
+{
+	visibility: visible;
+   
+}
+#meny li:hover
+{
+	background:none;
+	
+}
+#meny ul li:hover ul li a:hover
+{
+	
+ background: blue;
+ color: red;
+
+}
+#meny a:hover
+{
+	text-decoration:underline;
+	color: red;
+	background: blue;
+}
+
+
+
+
+#overbodybox
+{
+    text-align: right;
+    color: white;
+    margin-right: 9%;
+    margin-top: -0.2%;
+   
+         
+}
+
+#overbodybox ul
+{
+    list-style-type: none;
+}
+
+#overbodybox li
+{
+    display: inline;
+}
+
+#overbodybox a
+{
+    color: white;
+}
+
+#overbodybox a:hover
+{
+    color:  red;
+}
+
+#overskrift
+{
+    font-size: 200%;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.bodybox
+{
+    height:55em;
+    background-color: white;
+	padding:1%;
+    width: 80%;
+    text-align: center; 
+    margin-left: 9%;
+    margin-right: 9%; 
+    border: 0.1em solid black;
+    border-radius: 18px;
+    -moz-border-radius: 18px;      
+}
+
+
+#balisurf
+{
+    height: 40%;
+    width: 50%;
+    float: right;
+    margin-top: 4%;
+    margin-right: 8%;
+}
+
+.lukk
+{
+    border-style: inset;
+    background: white;
+    color: red;
+    border-color: red;
+    width: 100%;    
+}
+
+
+
+
+#reisevilkar
+{
+    text-align: left;
+}
+
+#omoss
+{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+
+#bildevenstre
+{
+    float: left;
+    height: 30%;
+    width: 38%;
+    padding-right: 5%;
+    margin-left: 7%;
+    padding-top: 5%;
+}
+
+#bildehoyre
+{
+    float: right;
+    height: 30%;
+    width: 38%;
+    padding-left: 5%;
+    margin-right: 7%;
+    padding-top: 5%;
+}
+
+.overtextmidt
+{
+    text-align: center;   
+    
+}
+#textmidt
+{
+    margin-left: 7%;
+    margin-right: 7%;
+    text-align: left;
+    margin-top: 3%;
+}
+
+#textundervenstre
+{
+    float: left;
+    margin-left: 18%; 
+}
+
+#textunderhoyre
+{
+    float: right;
+    margin-right: 18%;
+}
+
+#textboca
+{
+    float:left;
+    margin-left: 9%;
+}
+
+
+#usatext
+{
+    margin-left: 7%;
+    margin-right: 7%;
+    text-align: left;
+    margin-top: 2%;
+}
+
+#usavenstre
+{
+    float: left;
+    height: 25%;
+    width: 30%;
+    padding-right: 5%;
+    margin-left: 7%;
+}
+
+
+#usahoyre
+{
+    float: right;
+    height: 25%;
+    width: 30%;
+    padding-left: 5%;
+    margin-right: 7%; 
+}
+
+#usatextvenstre
+{
+    float:left;
+    margin-left: 9%; 
+}
+
+#usatexthoyre
+{
+    float: right;
+    margin-right: 15%;
+}
+
+#bestilling
+{
+    margin-left: 2%;
+    z-index: 17;
+    margin-top: 4%;
+    border: 0.2em solid black;
+    width: 37%;
+    height: 52%;
+    padding-top: 2%;
+    position: relative;
+    background-color: #D1D0D0;
+    
+}
+
+.tabellbestill
+{
+   float: left;
+}
+
+.tabellbestill2
+{
+    float: left;
+}
+#bestilling1
+{
+    margin-left: 2%;
+    z-index: 17;
+    margin-top: 4%;
+    border: 0.2em solid black;
+    width: 37%;
+    height: 40%;
+    padding-top: 2%;
+    position: relative;
+    background-color: #D1D0D0;
+    
+}
+#textbox
+{
+    padding-left: 3.6%;
+}
+#bestilling2
+{
+    position: relative;
+    z-index: 17;
+    margin-top: 4%;
+    border: 0.2em solid black;
+    width: 38%;
+    height: 60%;
+    padding-top: 2%;
+    background-color: #D1D0D0;
+    margin-left: 2%;
+    text-align: left;
+    padding-left: 1%;
+}
+
+#hr
+{
+  padding-right: 2%; 
+}
+#bestillher
+{
+    position: relative;
+    z-index: 2;
+    top: 4%;    
+}
+
+#skjema
+{
+    
+    margin-top: 4%;
+    border: 0.2em solid black;
+    width: 37%;
+    height: 47%;
+    padding-top: 2%;
+    position: relative;
+    background-color: #D1D0D0;
+}
+
+#itraveloverskrift
+{
+    float: none;
+    padding-bottom:3%;
+    margin-right: 24%;
+    margin-top: -9%;
+    font-size: 2.5em;
+    height: 80%;
+    color: #FF6F00;
+    font-family: Verdana, Geneva, sans-serif;
+    text-shadow: black 2px 2px, white -2px -2px;
+    ;
+}

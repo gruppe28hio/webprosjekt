@@ -1,0 +1,115 @@
+<?php
+session_start();
+?>
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+	<meta name="description" content="Hovedside - reiseside."/>
+	<meta name="author" content="Barbro M. Klashaugen, Marius Karlsen, Dan Eig, Alexander Paulsen"/>
+	<link rel="stylesheet" href="cssiPad.css"/>
+	
+
+	<title>iTravel</title>
+    <link rel="icon" href="logo.jpg" type="image/x-icon" />
+<link rel="shortcut icon" href="logo.jpg" type="image/x-icon" />
+
+</head>
+<body>
+
+
+<div id="overbodybox">
+<ul><li><a href="omossiPad.html" >Om oss</a></li> 
+<li><a href="kontaktiPad.html" >Kontakt oss</a></li>
+<li><a href="reisevilkariPad.html" >Reisevilkår</a></li>
+</ul>
+</div>
+
+
+<div class="bodybox">
+<div class="menybox">
+<div id="itraveloverskrift"><h1>iTravel</h1></div>
+
+<div id="meny">
+<ul>
+<li><strong><a style="background: #CCC;" href="indexiPad.phtml">Hjem</a></strong></li>
+</ul>
+<ul>
+<li><a href="#" style="background: white;">Fisketurer</a>
+<ul>
+<li><a href="lofoteniPad.html" style="background: white;">Lofoten</a></li>
+<li><a href="floridaiPad.html" style="background: white;">Florida</a></li>
+<li><a href="australiafiskiPad.html" style="background: white;">Australia</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><a href="#" style="background: white;">Surfing</a>
+<ul>
+<li><a href="baliiPad.html" style="background: white;">Bali</a></li>
+<li><a href="australiaiPad.html" style="background: white;">Australia</a></li>
+<li><a href="hawaiiiPad.html" style="background: white;">Hawaii</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><a href="#" style="background: white;">Skiferie</a>
+<ul>
+<li><a href="sveitsiPad.html" style="background: white;">Sveits</a></li>
+<li><a href="usaiPad.html" style="background: white;">USA</a></li>
+<li><a href="italiaiPad.html" style="background: white;">Italia</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><a href="#" style="background: white;">Fotballtur</a>
+<ul>
+<li><a href="englandiPad.html" style="background: white;">England</a></li>
+<li><a href="spaniaiPad.html" style="background: white;">Spania</a></li>
+<li><a href="argentinaiPad.html" style="background: white;">Argentina</a></li>
+</ul>
+</li>
+</ul>
+
+
+</div>
+</div>
+
+
+<br/><br/>
+<p>Er du lei av allminnelige reisemål der du bare ligger og kjeder deg på stranda hele ferien? 
+Ønsker du å gjøre noe nytt i ferien? iTravel arrangerer reiser for den mer eventyrlystne som ønsker
+ å oppleve mer i ferien. Velkommen til iTravel - vi er her for deg!</p>
+<img id="balisurf" src="balisurf.png" alt="bali" />
+
+
+
+<div id="bestilling">
+<?php
+
+
+Mail ("gruppe28@hotmail.com","Bestilling","Navn: ".$_SESSION["fornavn"]." ".$_SESSION["etternavn"]."\r\n".
+	  "Tur: ".$_SESSION["fisketur"].$_SESSION["surf"].$_SESSION["fotballtur"].$_SESSION["skiferie"]."\r\n".
+	  "Utreise: ".$_SESSION["dag"]."/".$_SESSION["dato"]."/".$_SESSION["aar"]."\r\n".
+	  "Hjemreise: ".$_SESSION["daghjem"]."/".$_SESSION["datohjem"]."/".$_SESSION["aarhjem"]."\r\n".
+	  "Hotellnetter: ".$_SESSION["hotellnetter"]."\r\n".
+	  "Antall: ".$_SESSION["antall"]."\r\n".
+	  "Adresse: ".$_SESSION["adresse"]." ".$_SESSION["postnr"]." ".$_SESSION["poststed"]."\r\n".
+	  "Tlf: ".$_SESSION["tlf"]."\r\n".
+	  "Epost: ".$_SESSION["epost"]."\r\n".
+	  "Pris: ".$_SESSION["pris"]."\r\n".
+      "Kommentar: ".$_SESSION["melding"]."\r\n".
+      "Sendt fra iPad"."\r\n",
+      "From: ".$_SESSION["epost"]);
+?>
+
+<p>Takk <?php echo $_SESSION["fornavn"] ?>. Din bestilling har blitt sendt til oss. Klikk <a href="indexiPad.phtml">her</a> 
+	for å gå tilbake til forsiden.</p>
+
+
+</div>
+
+</div>
+
+</body>
+</html>

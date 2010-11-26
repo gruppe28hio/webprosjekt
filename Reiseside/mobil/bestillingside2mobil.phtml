@@ -1,0 +1,354 @@
+<?php
+session_start();
+?>
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+	<meta name="description" content="Hovedside - reiseside."/>
+	<meta name="author" content="Barbro M. Klashaugen, Marius Karlsen, Dan Eig, Alexander Paulsen"/>
+	<link rel="stylesheet" href="cssmobil.css"/>
+	
+
+	<title>iTravel</title>
+    <link rel="icon" href="logo.jpg" type="image/x-icon" />
+<link rel="shortcut icon" href="logo.jpg" type="image/x-icon" />
+
+</head>
+<body>
+
+
+<div id="overbodybox">
+<ul><li><a href="omossmobil.html" >Om oss</a></li> 
+<li><a href="kontaktmobil.html" >Kontakt oss</a></li>
+<li><a href="reisevilkarmobil.html" >Reisevilkår</a></li>
+</ul>
+</div>
+
+
+<div class="bodybox">
+<div class="menybox">
+<div id="itraveloverskrift"><h1>iTravel</h1></div> 
+
+<div id="meny">
+<ul>
+<li><strong><a style="background: #CCC;" href="indexmobil.phtml">Hjem</a></strong></li>
+</ul>
+<ul>
+<li><a href="#" style="background:white;">Fisketurer</a>
+<ul>
+<li><a href="lofotenmobil.html" style="background:white;">Lofoten</a></li>
+<li><a href="floridamobil.html" style="background:white;">Florida</a></li>
+<li><a href="australiafiskmobil.html" style="background:white;">Australia</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><a href="#" style="background:white;">Surfing</a>
+<ul>
+<li><a href="balimobil.html" style="background:white;">Bali</a></li>
+<li><a href="australiamobil.html" style="background:white;">Australia</a></li>
+<li><a href="hawaiimobil.html" style="background:white;">Hawaii</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><a href="#" style="background:white;">Skiferie</a>
+<ul>
+<li><a href="sveitsmobil.html" style="background:white;">Sveits</a></li>
+<li><a href="usamobil.html" style="background:white;">USA</a></li>
+<li><a href="italiamobil.html" style="background:white;">Italia</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><a href="#" style="background:white;">Fotballtur</a>
+<ul>
+<li><a href="englandmobil.html" style="background:white;">England</a></li>
+<li><a href="spaniamobil.html" style="background:white;">Spania</a></li>
+<li><a href="argentinamobil.html" style="background:white;">Argentina</a></li>
+</ul>
+</li>
+</ul>
+
+
+</div></div>
+
+
+<br/><br/>
+<p>Er du lei av allminnelige reisemål der du bare ligger og kjeder deg på stranda hele ferien? 
+Ønsker du å gjøre noe nytt i ferien? iTravel arrangerer reiser for den mer eventyrlystne som ønsker
+ å oppleve mer i ferien. Velkommen til iTravel - vi er her for deg!</p>
+<img id="balisurf" src="balisurf.png" alt="bali" />
+
+
+<div id="bestilling2">
+<?php
+session_start();
+
+$dato = date("d/m/Y H:i");
+echo $dato;
+?>
+<h3>Her er informasjonen vi har om din bestilling:</h3>
+<div id="hr">
+<hr/>
+</div>
+<table>
+<tr>
+<td>Antall reisende: </td>
+<td><div class="tabellbestill2"><?php 
+if ($_SESSION["antall"] == "")
+{
+echo "Velg antall reisende og trykk oppdater <a href='index.php'>tilbake</a>";
+}
+else
+{
+echo $_SESSION["antall"];
+}?></div></td>
+</tr>
+<tr>
+<td>Reisesmål: </td>
+<td><div class="tabellbestill2"><?php
+$pris = 0;
+$hotell= 0;
+		if ($_SESSION["fisketur"] =="" and $_SESSION["surf"] =="" and $_SESSION["skiferie"] =="" and $_SESSION["fotballtur"] =="")
+		{
+			echo "Velg et reisemål <a href='indexmobil.phtml'>tilbake</a>";
+		}
+	 if (isset($_SESSION["fisketur"]))
+	 {
+ 		echo $_SESSION["fisketur"]." ";
+		if ($_SESSION["fisketur"] == "Fiske i lofoten")
+		{
+		$pris += 999;
+		$hotell += $_SESSION["hotellnetter"] * 800;
+		}
+		if ($_SESSION["fisketur"] == "Fiske i florida")
+		{
+		$pris += 5495;
+		$hotell += $_SESSION["hotellnetter"] * 699;
+		}
+		if ($_SESSION["fisketur"] == "Fiske i australia")
+		{
+		$pris += 9845;
+		$hotell += $_SESSION["hotellnetter"] * 599;
+		}
+	 }
+	 if (isset($_SESSION["surf"]))
+	 {
+		 echo $_SESSION["surf"]." ";
+		 if ($_SESSION["surf"] == "Surfe på Bali")
+		{
+		$pris += 9250;
+		$hotell += $_SESSION["hotellnetter"] * 159;
+		}
+		if ($_SESSION["surf"] == "Surfe i Australia")
+		{
+		$pris += 10300;
+		$hotell += $_SESSION["hotellnetter"] * 599;
+		}
+		if ($_SESSION["surf"] == "Surfe i Hawaii")
+		{
+		$pris += 11650;
+		$hotell += $_SESSION["hotellnetter"] * 550;
+		}
+	 }
+	 if (isset($_SESSION["skiferie"]))
+	 {
+		 echo $_SESSION["skiferie"]." ";
+		if ($_SESSION["ski"] == "Ski i Sveits")
+		{
+		$pris += 4575;
+		$hotell += $_SESSION["hotellnetter"] * 1299;
+		}
+		if ($_SESSION["ski"] == "Ski i USA")
+		{
+		$pris += 4999;
+		$hotell += $_SESSION["hotellnetter"] * 999;
+		}
+		if ($_SESSION["ski"] == "Ski i Italia")
+		{
+		$pris += 2345;
+		$hotell += $_SESSION["hotellnetter"] * 1100;
+		}
+	 }
+	 if (isset($_SESSION["fotballtur"]))
+	 {
+		 echo $_SESSION["fotballtur"]." ";
+		if ($_SESSION["fotballtur"] == "Fotball i England")
+		{
+		$pris += 1099;
+		$hotell += $_SESSION["hotellnetter"] * 600;
+		}
+		if ($_SESSION["fotballtur"] == "Fotball i Spania")
+		{
+		$pris += 1899;
+		$hotell += $_SESSION["hotellnetter"] * 450;
+		}
+		if ($_SESSION["fotballtur"] == "Fotball i Argentina")
+		{
+		$pris += 7799;
+		$hotell += $_SESSION["hotellnetter"] * 299;
+		}
+	 }
+
+
+$pris += $hotell; 
+$pris+=120;
+$pris+=$pris*1.03;
+$pris= $pris*$_SESSION["antall"];
+
+ ?></div></td>
+</tr>
+<tr>
+<td>Reisedato: </td>
+<td><div class="tabellbestill2"><?php 
+if ($_SESSION["dag"] =="" or $_SESSION["dato"] =="" or $_SESSION["aar"] =="")
+{
+	echo "Fyll inn reisedato <a href='indexmobil.phtml'>tilbake</a>";
+}
+else { 
+echo $_SESSION["dag"]."/".$_SESSION["dato"]."/".$_SESSION["aar"]; } ?></div></td>
+</tr>
+<tr>
+<td>Hjemreise: </td>
+<td><div class="tabellbestill2"><?php 
+if ($_SESSION["daghjem"] =="" or $_SESSION["datohjem"] =="" or $_SESSION["aarhjem"] =="")
+{
+	echo "Fyll inn hjemreise <a href='indexmobil.phtml'>tilbake</a>";
+}
+else { 
+echo $_SESSION["daghjem"]."/".$_SESSION["datohjem"]."/".$_SESSION["aarhjem"]; } ?></div></td>
+</tr>
+<tr>
+<td>Hotellnetter</td>
+<td><div class="tabellbestill2"><?php
+if ($_SESSION["hotellnetter"] == "")
+{
+	echo "Fyll inn antall netter du vil ha på hotell <a href='indexmobil.phtml'>tilbake</a>";
+}
+else {
+	echo $_SESSION["hotellnetter"];
+}
+?></div></td>
+</tr>
+<tr>
+<td>Navn: </td>
+<td><div class="tabellbestill2"><?php if ($_REQUEST["fornavn"] =="" or $_REQUEST["etternavn"] == "")
+	{
+		echo "Fyll inn fullt navn <a href='indexmobil.phtml'>tilbake</a>";
+	}
+	else
+	{
+		echo $_REQUEST["fornavn"]." ".$_REQUEST["etternavn"];	
+	}?></div></td>
+</tr>
+<tr>
+<td>Adresse: </td>
+<td><div class="tabellbestill2"><?php
+	if ($_REQUEST["adresse"] == "")
+	{
+		echo "Fyll inn adresse <a href='indexmobil.phtml'>tilbake</a>";
+		
+	}
+	else
+	{
+		echo $_REQUEST["adresse"];
+	}
+	?></div></td>
+</tr>
+<tr>
+<td>Postnr: </td>
+<td><div class="tabellbestill2"><?php
+	if ($_REQUEST["postnr"] == "")
+	{
+		echo "Fyll inn postnr <a href='indexmobil.phtml'>tilbake</a>";
+		
+	}
+	else
+	{
+		echo $_REQUEST["postnr"];
+	}
+	?></div></td>
+</tr>
+<tr>
+<td>Poststed: </td>
+<td><div class="tabellbestill2"><?php
+	if ($_REQUEST["poststed"] == "")
+	{
+		echo "Fyll inn poststed <a href='bestillingsskjemamobil.phtml'>tilbake</a>";
+		
+	}
+	else
+	{
+		echo $_REQUEST["poststed"];
+	}
+	?></div></td>
+</tr>
+<tr>
+<td>Telefon: </td>
+<td><div class="tabellbestill2"><?php
+	if ($_REQUEST["tlf"] == "")
+	{
+		echo "Fyll inn telefonnummer <a href='indexmobil.phtml'>tilbake</a>";
+		
+	}
+	else
+	{
+		echo $_REQUEST["tlf"];
+	}
+	?></div></td>
+</tr>
+<tr>
+<td>E-post</td>
+<td><div class="tabellbestill2"><?php
+	if ($_REQUEST["epost"] == "")
+	{
+		echo "Fyll inn epost <a href='indexmobil.phtml'>tilbake</a>";
+		
+	}
+	else
+	{
+		echo $_REQUEST["epost"];
+	}
+	?></div></td>
+    <tr>
+    <td>Pris: </td><td><div class="tabellbestill2"><?php echo $pris." kr"; ?></div></td>
+    </tr>
+    
+    <tr>
+    <td>Din kommentar: </td><td><div class="tabellbestill2"><?php echo $_SESSION["melding"]; ?></div></td>
+    </tr>
+    <?php
+	$_SESSION["fornavn"] = $_REQUEST["fornavn"];
+	$_SESSION["etternavn"] = $_REQUEST["etternavn"];
+	$_SESSION["adresse"] = $_REQUEST["adresse"];
+	$_SESSION["postnr"] = $_REQUEST["postnr"];
+	$_SESSION["poststed"] = $_REQUEST["poststed"];
+	$_SESSION["tlf"] = $_REQUEST["tlf"];
+	$_SESSION["epost"] = $_REQUEST["epost"];
+	$_SESSION["pris"] = $pris;
+    
+	?>
+
+<tr>
+<td><a href="indexmobil.phtml">Tilbake</a></td>
+</tr>
+</table>
+<form action="sendmobil.phtml" method="post">
+<table>
+<tr>
+<td><input type="submit" name="send" value="Send bestilling" /></td>
+</tr>
+
+</table>
+</form>
+
+
+
+</div>
+
+</div>
+
+</body>
+</html>

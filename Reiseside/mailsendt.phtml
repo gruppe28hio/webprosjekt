@@ -27,68 +27,66 @@ session_start();
 
 <div class="bodybox">
 <div class="menybox">
-<img id="itravel" src="headbox.png" alt="Head"   /> 
+<div id="itraveloverskrift"><h1>iTravel</h1></div>
 
-<form action="" method="get">
-<table id="menytabell">
-<tr>
-<td><input class="meny" type="submit" value="    Hjem    " name="hjem"/></td>
-<td><input class="meny" type="submit" value="  Fisketurer  " name="fisk"/></td>
-<td><input class="meny" type="submit" value="   Surfing   " name="surf"/></td>
-<td><input class="meny" type="submit" value="  Skiferier  " name="ski"/></td>
-<td><input class="meny" type="submit" value="Fotballturer " name="fotball"/></td>
-</tr>
+<div id="meny">
+<ul>
+<li><a href="index.phtml" style="background: white;">Hjem</a></li>
+</ul>
+<ul>
+<li><a href="#" style="background: white;">Fisketurer</a>
+<ul>
+<li><a href="lofoten.html" style="background: white;">Lofoten</a></li>
+<li><a href="florida.html" style="background: white;">Florida</a></li>
+<li><a href="australiafisk.html" style="background: white;">Australia</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><a href="#" style="background: white;">Surfing</a>
+<ul>
+<li><a href="bali.html" style="background: white;">Bali</a></li>
+<li><a href="australia.html" style="background: white;">Australia</a></li>
+<li><a href="hawaii.html" style="background: white;">Hawaii</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><a href="#" style="background: white;">Skiferie</a>
+<ul>
+<li><a href="sveits.html" style="background: white;">Sveits</a></li>
+<li><a href="usa.html" style="background: white;">USA</a></li>
+<li><a href="italia.html" style="background: white;">Italia</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><a href="#" style="background: white;">Fotballtur</a>
+<ul>
+<li><a href="england.html" style="background: white;">England</a></li>
+<li><a href="spania.html" style="background: white;">Spania</a></li>
+<li><a href="argentina.html" style="background: white;">Argentina</a></li>
+</ul>
+</li>
+</ul>
 
-
-
-<?php
-if (isset($_REQUEST["hjem"]))
-{
-	$_SESSION["filnavn"]="index.phtml";
-    	include "nedremeny/hjem.phtml";
-}
-
-if (isset($_REQUEST["fisk"]))
-{
-    $_SESSION["filnavn"]="index.phtml";
-	include "nedremeny/fisk.phtml";
-
-}
-
-if (isset($_REQUEST["surf"]))
-{
-     $_SESSION["filnavn"]="index.phtml";
-	include "nedremeny/surf.phtml";
-}
-if (isset($_REQUEST["ski"]))
-{
-     $_SESSION["filnavn"]="index.phtml";
-	include "nedremeny/ski.phtml";
-}
-if (isset($_REQUEST["fotball"]))
-{
-    $_SESSION["filnavn"]="index.phtml";
-	include "nedremeny/fotball.phtml";
-}
-?>
-</table>
-</form>
+</div>
 </div>
 
-
-<br/><br/>
+<br /><br />
 <?php
-
-
 
 
 if(isset($_REQUEST["knapp"]))
 if (($_REQUEST["navn"]=="")or($_REQUEST["telefonnummer"]=="")
 or($_REQUEST["epost"]==""))
 {
-    echo "<strong>Du må fylle ut alle feltene merket med * <br/></br/> </strong>";
-    echo "<br/><br/>";
-    echo "<a href='kontakt.phtml'>Tilbake</a>";
+    echo "<strong>Du må fylle ut alle feltene merket med *  </strong>";
+?>
+<br /><br />
+<?php
+    
+    echo "<a href='kontakt.html'>Tilbake</a>";
 }   
 else 
     
@@ -107,8 +105,8 @@ echo "<b>Din kommentar: </b><br/> ". $_REQUEST["beskjed"]. "<br/><br/>";
 echo "<a href='index.phtml'>Klikk her for å gå tilbake til forsiden.</a>";
 }
 ?>
-
 </div>
+
 
 </body>
 </html>

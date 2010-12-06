@@ -153,7 +153,19 @@ body
     -moz-border-radius: 18px;      
 }
 
-
+#usabox
+{
+    height:60em;
+    background-color: white;
+	padding:1%;
+    width: 80%;
+    text-align: center; 
+    margin-left: 9%;
+    margin-right: 9%; 
+    border: 0.1em solid black;
+    border-radius: 18px;
+    -moz-border-radius: 18px;
+}
 #balisurf
 {
     height: 40%;

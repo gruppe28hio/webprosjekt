@@ -5,7 +5,7 @@ body
 }
 .menybox
 {
-    height:14%;
+    height:12%;
     background: #0066CC;
 	margin-top: -2.4%;
     margin-left: -1.4%;
@@ -136,7 +136,7 @@ body
 
 .bodybox
 {
-    height:55em;
+    height:65em;
     background-color: white;
 	padding:1%;
     width: 80%;
@@ -151,11 +151,11 @@ body
 
 #balisurf
 {
-    height: 40%;
+    height: 35%;
     width: 50%;
     float: right;
     margin-top: 4%;
-    margin-right: 8%;
+    margin-right: 2%;
 }
 
 .lukk
@@ -281,7 +281,7 @@ body
     margin-top: 4%;
     border: 0.2em solid black;
     width: 37%;
-    height: 52%;
+    height: 38%;
     padding-top: 2%;
     position: relative;
     background-color: #D1D0D0;
@@ -304,7 +304,7 @@ body
     margin-top: 4%;
     border: 0.2em solid black;
     width: 37%;
-    height: 40%;
+    height: 32%;
     padding-top: 2%;
     position: relative;
     background-color: #D1D0D0;
@@ -321,7 +321,7 @@ body
     margin-top: 4%;
     border: 0.2em solid black;
     width: 38%;
-    height: 60%;
+    height: 47%;
     padding-top: 2%;
     background-color: #D1D0D0;
     margin-left: 2%;
@@ -346,7 +346,7 @@ body
     margin-top: 4%;
     border: 0.2em solid black;
     width: 37%;
-    height: 47%;
+    height: 40%;
     padding-top: 2%;
     position: relative;
     background-color: #D1D0D0;
@@ -359,6 +359,7 @@ body
     margin-right: 24%;
     margin-top: -9%;
     font-size: 2.5em;
+    
     height: 80%;
     color: #FF6F00;
     font-family: Verdana, Geneva, sans-serif;

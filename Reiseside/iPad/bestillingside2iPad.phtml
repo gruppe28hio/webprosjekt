@@ -156,17 +156,17 @@ $hotell= 0;
 	 if (isset($_SESSION["skiferie"]))
 	 {
 		 echo $_SESSION["skiferie"]." ";
-		if ($_SESSION["ski"] == "Ski i Sveits")
+		if ($_SESSION["skiferie"] == "Ski i Sveits")
 		{
 		$pris += 4575;
 		$hotell += $_SESSION["hotellnetter"] * 1299;
 		}
-		if ($_SESSION["ski"] == "Ski i USA")
+		if ($_SESSION["skiferie"] == "Ski i USA")
 		{
 		$pris += 4999;
 		$hotell += $_SESSION["hotellnetter"] * 999;
 		}
-		if ($_SESSION["ski"] == "Ski i Italia")
+		if ($_SESSION["skiferie"] == "Ski i Italia")
 		{
 		$pris += 2345;
 		$hotell += $_SESSION["hotellnetter"] * 1100;

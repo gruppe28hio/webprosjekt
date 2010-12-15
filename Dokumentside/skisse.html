@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 	<meta name="description" content="Leveranse 1 i Web-Prosjekt.">
 	<meta name="author" content="Barbro M. Klashaugen, Marius Karlsen, Dan Eig, Alexander Paulsen">
 	<link rel="stylesheet" href="css.css">
@@ -21,12 +21,309 @@
 	<li> <a href="moter.html">Prosjektdagbok</a></li>
 	<li> <a href="midtveisrapport.html" >Midtveisrapport</a></li>
 	<li> <a href="skisse.html" style="background:black;">Sluttrapport</a></li>
+	<li> <a href="forum.phtml">Forum</a></li>
 	</ul> 
 	</div>
 	</div>
 <div id="bodybox">
 <h2 style="text-align:center;">Sluttrapport</h2>
-<p>Her kommer det en sluttrapport en gang i fremtiden.</p>
+<h3>Innholdsfortegnelse</h3>
+<ul>
+<li> <b><a href="#forord">Forord				</a>		   </b>			</li>
+<li> <b><a href="#intro">Punkt 1 – Introduksjon	</a> 			</b>		</li>
+		<li class="innhold"> <a href="#intro1">Første møte</a>				</li>
+		<li class="innhold"> <a href="#intro2">Valg av oppgave	</a>		</li>
+		<li class="innhold"> <a href="#intro3">Problemstilling	</a>		</li>
+		<li class="innhold"> <a href="#intro4">Målformuleringer		</a>	</li>
+<li> <b><a href="#sam">Punkt 2 – Samarbeid		</a>			</b>		</li>
+		<li class="innhold"> <a href="#sam1">Arbeidsfordeling	</a>		</li>
+		<li class="innhold"> <a href="#sam2">Arbeidsmetoder		</a>		</li>
+		<li class="innhold"> <a href="#sam3">GIT				</a>		</li>
+		<li class="innhold"> <a href="#sam4">Uforutsette hindringer	</a>	</li>
+		<li class="innhold"> <a href="#sam5">Oppmøte				</a>	</li>
+		<li class="innhold"> <a href="#sam6">Gruppesiden			</a>	</li>
+<li> <b> <a href="#prosjektsiden">Punkt 3 – Prosjektsiden</a>	</b>		</li>
+		<li class="innhold"> <a href="#prosjektsiden1">Tilnærming	</a>	</li>
+		<li class="innhold"> <a href="#prosjektsiden2">Design 		</a>	</li>
+		<li class="innhold"> <a href="#prosjektsiden3">Koding		</a>	</li>
+		<li class="innhold"> <a href="#prosjektsiden4">Universell utforming	</a></li>
+<li> <b> <a href="#dok">Punkt 4 - Dokumenter</a></b>						</li>
+	<li class="innhold"> <a href="#dok1">Styringsdokumenter	</a>			</li>
+	<li class="innhold"> <a href="#dok2">Midtveisrapport	</a>			</li>
+<li> <b> <a href="#konkl">Konklusjon</a></b>								</li>
+<li> <b> <a href="#kilder">Kilder</a></b>									</li>
+</ul>
+<h3 style="text-align:center;"><a name="forord">Forord</a></h3><div style="text-align:right;"><a href="skisse.html">Til toppen</a></div></p>
+<p>Prosjektet iTravel er resultatet av nesten to måneders jobbing fra fire studenter. Oppgaven var relativt åpen og vi kunne velge stort 
+sett hvilket som helst tema. Vi ble enige om at vi ville jobbe med et emne som engasjerte og inspirerte oss til å ville legge ned litt arbeid 
+i oppgaven. Valget vi falt på var en reiseside som tilbød aktiviteter i tillegg til flybilletter og overnatting. </p>
+<p>Vi utviklet noen mål og formulerte følgende mål og problemstillinger:</p>
+<p><b>Formål</b> - Å bedre vår kompetanse med å lage et webprosjekt i gruppearbeid. Vi ville ha et kreativt nettsted som passet litt til våre 
+interesser slik at motivasjonen forble høy. Skriver man om noe man ikke har interesse i, er det lett for å bli fryktelig kjedelig å 
+arbeide med det.</p>
+<p><b>Produktmål </b>- Å lage en oversiktlig og solid side som er lett å finne fram på for alle eventuelle kunder, uavhengig av deres forutsetninger. </p>
+<p><b>Prosessmål </b>- At alle gruppemedlemmer opplever framgang i alle temaene innenfor prosjektet. Dette inkluderer det å kode HTML, CSS, PHP etc., 
+vise kreativitet og lære å bruke begreper innenfor prosjektfaget korrekt.</p>
+<p><b>Problemstilling </b>- Hvordan kan vi lage en hjemmeside for et "aktivitetsbyrå" som utfyller følgende kriterier best mulig: </p>
+<ul><li>lett å bruke;</li>
+	<li>oversiktlig;</li>
+	<li>riktig kodet;</li>
+	<li>universelt utformet;</li>
+	<li>samtidig som alle forholder seg til samarbeidsavtalen, som blir utdypet rundt senere?</li>
+</ul>
+<p>Vi mener vi har svart godt på problemstillingen og utvilsomt truffet med målsetningene våre. I løpet av denne sluttrapporten vil vi 
+gå igjennom hele prosessen fra første til siste uke og forklare hvordan vi føler arbeidet med prosjektet har gått. </p>
+<br/>
+
+<h3 style="text-align:center;"><a name="intro">Introduksjon</a></h3><div style="text-align:right;"><a href="skisse.html">Til toppen</a></div></p>
+<p><b><a name="intro1">Første møte</a></b></p>
+<p>Vi møttes for første gang den 4. oktober. Da var vi tre stykker, Marius, Alexander og Dan. Barbro hadde ikke mulighet til å møte opp de to 
+første møtene, så gutta var alene. Ingen av oss kjente hverandre, så noen minutter med reservert stemning var det naturlig nok, men vi ble fort 
+varme i trøya og begynte å snakke sammen om hvor vi ville med prosjektet. Vi snakket sammen om hvilke erfaringer vi hadde innen fagene og hvor 
+mye vi ville jobbe med dette. Det viste seg at ingen hadde hatt noe særlig erfaring med å lage websider fra før, men alle virket motiverte for 
+å legge ned et solid stykke arbeid, så forhåndsutsiktene var tross alt lyse, mente vi.  </p>
+<p>Vi så gjennom oppgaveteksten og ble enige om å tenke på hvilke temaer vi kunne tenke oss å jobbe med til neste møte.  
+Imens kunne vi starte på noen styringsdokumenter og bli enige om arbeidsrutiner og møtetider. Vi hadde blitt delt inn gruppevis 
+etter hvor mye vi hadde oppgitt at vi ville jobbe med prosjektet per uke, så vi var alle klare på at vi passet inn i 5-10 timer i uka. 
+Slik ble vi enige om at vi skulle ha to gruppemøter per uke - ett tidlig i uka og ett på torsdager. </p>
+
+<p><b><a name="intro2">Valg av oppgave</a></b></p><div style="text-align:right;"><a href="skisse.html">Til toppen</a></div>
+<p>Gutta fikk beskjed av Barbro om at vi bare skulle velge et tema, siden hun ikke kunne komme den første uka. Da startet vi med en liten 
+brainstorming av temaer, og det tok ikke lang tid før vi løste den utfordringen. Flust av forslag ble lagt fram, blant annet nyhetsportal 
+for fotballnyheter, nettbutikk, nyhetsside, informasjonsside for SitComs og reisebyrå. </p>
+<p>En fellesnevner blant medlemmene er at vi er alle aktive, så da en av oss kastet ut forslaget om å lage en reiseside som solgte pakketurer
+ som inkluderte diverse aktiviteter, kom det mye positiv respons. Både Marius og Dan er ivrige fotballsupportere og begynte med en gang å bable 
+ om fotballturer, mens Alexander har familie i Lofoten og var en pådriver fra første stund for fisketurer. Valget ble enstemmig og vi bestemte 
+ oss for å gyve løs på reisesiden. </p>
+
+<p><b><a name="intro3">Problemstilling</a></b></p><div style="text-align:right;"><a href="skisse.html">Til toppen</a></div>
+<p>Problemstillingen skal gå som en rød tråd gjennom hele prosjektet og ligge som grunnmuren i alt vi gjør. Det er som om vi lager oppgaveteksten
+ til oppgaven vår selv. Vi ville ha en problemstilling som vi kunne se på som forklarer konkret hva som må gjøres. Vi jobbet ut ifra oppgavevalget 
+ og hva vi hadde lært var viktig for websider til da i semesteret. Etter litt jobbing, ble formuleringen slik:</p>
+<p>Problemstilling - Hvordan kan vi lage en hjemmeside for et "aktivitetsbyrå" som utfyller følgende kriterier best mulig: </p>
+<ul><li>lett å bruke;</li>
+	<li>oversiktlig;</li>
+	<li>riktig kodet;</li>
+	<li>universelt utformet;</li>
+	<li>samtidig som alle forholder seg til samarbeidsavtalen, som blir utdypet rundt senere?</li>
+</ul>
+<p><b><a name="intro4">Målformuleringer</a></b></p><div style="text-align:right;"><a href="skisse.html">Til toppen</a></div>
+<p>Målformuleringene vi valgte var produktmål og prosessmål. Disse skulle samsvare bra med problemstillingen, og også overlappe noen steder.</p>
+<p>Produktmålet er selve resultatet vi sitter igjen med. Hadde ikke alt dette vært digitalt, ville det vært det håndfaste produktet prosessen 
+resulterer i. Vi formulerte følgende produktmål etter litt diskusjon:</p>
+<p><b>Å lage en oversiktlig og solid hjemmeside som er lett å finne fram på for alle eventuelle kunder, uavhengig av deres forutsetninger.</b></p>
+<p>Prosessmålet er hva vi skal lære i løpet av prosessen. Vi utvikler ferdighetene og kunnskapene våre kontinuerlig i en slik prosjektprosess, 
+og prosessmålet skulle være en formulering på hva vi forventet å tilarbeide oss av ferdigheter av arbeidet. Til slutt ble det formulert slik:</p>
+<p><b>At alle gruppemedlemmer opplever framgang i alle temaene innenfor prosjektet. Dette inkluderer det å kode HTML, CSS, PHP etc., vise 
+kreativitet og lære og bruke begreper innenfor prosjektfaget korrekt.</b></p>
+<br/>
+
+<h3 style="text-align:center;"><a name="sam">Samarbeid</a></h3><div style="text-align:right;"><a href="skisse.html">Til toppen</a></div></p>
+<p><b><a name="sam1">Arbeidsfordeling</a></b></p>
+<p>Det ble lagd ansvarskart i startfasen og arbeidsfordeling har vært jevn. Alle har hatt sitt å gjøre og selv om det var trøbbel med Git i 
+starten ble det fort orden i sysakene da Alexander og Marius fikk det til å fungere og lærte dette bort til de to andre på gruppa. 
+Alexander har hatt det meste av ansvaret for PHP kodinga, vært med å utforme styringsdokumenter, og lært bort Git. Dan har tatt ansvar for 
+det meste som har med styringsdokumentene å gjøre, både skriving og utforming. Han er også formell gruppeleder, men kun symbolsk, da gruppa 
+er tilhenger av demokrati. Marius har drevet med HTML, lært bort Git, koda CSS og utforma styringsdokumenter og Barbro har drevet med design, 
+skrevet styringsdokumenter, og kodet HTML.</p>
+<p>Utenom det har alle bidratt på de fleste områdene siden vi ikke egentlig har hatt en oppgave hver, og om det var noe en av oss ikke kunne 
+så var det alltids en annen på gruppa som hadde noe å bidra med.  Vi har drevet der det trengs på oppgaven og passa på at vi har fått gjort 
+det vi skulle med tanke på leveransene vi har levert.</p>
+<p>Slikt sett har gruppa fungert meget bra, selv om det har vært litt dødtid nå og da. Dette var spesielt i starten da gruppa satt foran en 
+pc og alle dirigerte mens en satt og skrev. </p>
+<p>Ellers har arbeidsfordeling som sagt vært jevn og alle har bidratt der de kan og fått utfordra seg selv med tanke på problemløsning og 
+det å lære nye ting.</p>
+<p><b><a name="sam2">Arbeidsmetoder</a></b></p><div style="text-align:right;"><a href="skisse.html">Til toppen</a></div>
+<p> Vi har hatt møter to ganger i uka der vi i starten planla hvordan vi skulle løse oppgavene vi fikk og utformet styringsdokumenter. 
+Senere ble det til at vi satt og arbeidet på de fleste møtene. Git er jo også en selvfølge og det har fungert bra, men en liten stund drev 
+vi også med Dropbox da Git var ganske umulig i starten. Etter at vi fikk Git til å fungere bestemte vi oss for at vi ikke ville bruke Dropbox 
+da vi synes det ble litt mye med begge deler.</p>
+<p>Vi har også brukt Teamviewer, slik at vi kan enkelt se hva de andre driver med om vi sitter på forskjellige plasser og slik kan vi hjelpe 
+hverandre ganske lett. Vi har selvfølgelig brukt pc-er for koding og utforming av alle dokumenter, noe som vel egentlig er en selvfølge.  
+På design utkastet brukte vi Photoshop CS5, en gratis prøve versjon som kan lastes ned fra Adobes hjemmeside.</p>
+<p><b><a name="sam3">GIT</a></b></p><div style="text-align:right;"><a href="skisse.html">Til toppen</a></div>
+<p>Git er rett og slett et kapitel for seg selv. Vi har hatt forferdelig mye trøbbel med å få det opp å gå. Har vært mye frustrasjon og 
+banning, og vi har rett og slett vært fryktelig lei hele greia og kunne ikke se noe positivt eller noen god grunn til hvorfor vi i det 
+hele tatt skulle bruke et program som ikke engang ville fungere.</p>
+<p>Derfor fikk Alexander og Marius i oppgave å jakte ned en eller annen som kunne hjelpe oss å få det i gang. Det ble visst Simen. Det tok 
+litt tid men endte med suksess og glade ansikter til slutt. Siden det var alt fryden og gammen helt til Dan måtte formattere pc-en sin da 
+han fikk et virus og han har foreløpig ikke fått til å fungere igjen da de samme problemene dukker opp igjen og vi er ikke helt sikre på 
+hvordan vi skal løse dette. Vi satser på at vi skal få ordnet det så fort som mulig i alle fall.</p>
+<p>Sånn helhetlig sett har Git fungert bra når det faktisk har fungert, og vi føler at vi mestrer å bruke det.</p>
+<p><b><a name="sam4">Uforutsette hindringer</a></b></p><div style="text-align:right;"><a href="skisse.html">Til toppen</a></div>
+<p>GIT er vel det eneste hinderet vi har støtt på som har gitt problemer som vi ikke helt hadde regnet med. Ellers har det vært en del 
+uforutsette ting med koding, siden vi har gjort om kildekoden til siden vår ganske mye, så har det vært mye fram og tilbake med dette.
+ Et eksempel er menyene, der vi måtte endre alle sidene hver gang vi la til noe nytt i menyen. Vi kunne løst dette annerledes, for eksempel 
+ ved å bruke PHP-includes. Dette er uansett bagateller, og disse hindringene har ikke vært store problemer.</p>
+<p><b><a name="sam5">Oppmøte</a></b></p><div style="text-align:right;"><a href="skisse.html">Til toppen</a></div>
+<p>Det har vært bra oppmøte gjennom hele perioden der vi har vært fulltallige på ca 90 % av møtene. Om det mot formodning er noen 
+som ikke har kunnet komme så har det blitt sagt ifra på forhånd og det har vært i orden, eller om flere ikke kunne, har vi forandra
+ møtetiden til et mer passende tidspunkt. Vi har for det meste hatt to til tremøter i uka der vi har planlagt og arbeidet med både 
+ dokumentsiden og prosjektsiden, men mot slutten av perioden ble vi enige om å prioritere de andre emnene mer, i forbindelse med disse emnenes
+ eksamener. </p>
+<p><b><a name="sam6">Gruppesiden</a></b></p><div style="text-align:right;"><a href="skisse.html">Til toppen</a></div>
+<p>Leveranse 1 var i hovedsak å ferdigstille gruppesiden. Oppgaven var at vi skulle opprette en gruppeside med styringsdokumenter. Noe av det 
+første vi gjorde var å skrive styringsdokumentene. Følgende styringsdokumenter skulle utarbeides: </p>
+<p>Prosjektbeskrivelse, samarbeidsavtale, ansvarskart, milepælsplan, aktivitetsplan, risikoplan og prosjektdagbok. </p>
+<p>Etter vi var ferdige med de, ble vi enige om designet på siden og begynte å kode. Vi lastet alle dokumentene opp på én av medlemmenes 
+område på HiO-serveren og brukte den som område for gruppesiden. </p>
+<br/>
+<p>Vi satte oss ned etter styringsdokumentene var ferdigskrevet og diskuterte litt og la fram tanker om hvordan gruppesiden skulle se ut. 
+Vi kom fram til at hovedprioriteten her var at den skulle se oversiktlig og lesbar ut. Utseende spiller ingen stor rolle her, da denne kun
+ skal inneholde tekst om hvordan prosessen går. Vi gikk for en midtsentrert side der man navigerer via en midtstilt meny over selve innholdet. 
+ Fargevalgene ble to versjoner av grå, med blå knapper på menyen. Vi føler disse gjorde at skriften, som var svart på det grå og hvit på det blå,
+ var svært lett å lese. Siden har også mye luft, som er viktig å ha. </p>
+<br/>
+<p>Vi begynte å lage gruppesiden før vi hadde GIT "up and running", noe som førte til at det stort sett var én person som satt og kodet. 
+Fra starten av var det lite komplisert kode her, i og med at siden skulle være relativt simpel og ren. Den ble også laget i starten av 
+prosjektperioden, da vi hadde langt mindre kunnskap om språkene enn vi har nå i skrivende stund. Ettersom vi lærte mer, la vi til flere ting på 
+siden. Blant annet et forum som vi har brukt til å kommunisere med hverandre. Når det blir skrevet et innlegg der, får alle gruppemedlemmene e-post
+ på sin Fronter-mail.</p>
+<p>En liten komplikasjon på siden har vært menyene. Det har variert fælt hvor mange knapper menyen skulle bestå av. I starten hadde vi én side 
+per styringsdokument, men etter hvert som det ble flere og flere dokumenter fant vi ut at vi måtte samle de litt. Dette på grunn av at det ble
+ så voldsomt mange knapper i en periode, slik at de fordelte seg over to linjer. Vi føler at det ble en god løsning å samle hele midtveisleveransen
+ på én side. </p>
+<p>All HTML følger HTML5-standarden og validerer deretter, mens CSS-en validerer som CSS 2.1. Forum-siden måtte lagres som .phtml siden den ikke
+ validerer hvis den er .php. </p>
+ <br/>
+<h3 style="text-align:center;"><a name="prosjektsiden">Prosjektsiden</a></h3><div style="text-align:right;"><a href="skisse.html">Til toppen</a></div></p>
+<p><b><a name="prosjektsiden1">Tilnærming</a></b></p>
+<p>Før vi startet med prosjektsiden hadde vi møter der vi diskuterte og tenkte på hva vi kunne tenke oss å jobbe med. Deretter var det 
+brainstorming og alle kom med forslag til hva vi ville lage og hvordan vi tenkte dette skulle bli. Vi snakket også om hva vi interesserte oss for,
+ slik at vi kunne lage noe alle hadde motivasjon for å drive med. Da blir det mye enklere å jobbe med det. Valget falt til slutt på en reiseside 
+ tilbyr forskjellige aktiviteter inkludert. Etter at det var bestemt så gikk vi i gang med å lage styringsdokumenter og få i gang Git. Som nevnt 
+ før, ble det en del trøbbel med Git, men dette ordnet seg. Vi lagde også en papirprototype for å visualisere hvordan side layouten skulle bli 
+ og hvordan vi ville at det skulle fungere. Deretter satte vi i gang med å kode i HTML og CSS. Vi fant også ut etter hvert at vi ville bruke PHP
+ til bestillingsdelen vår. Slik fikk vi også implementert andre ting vi har lært dette semesteret.</p>
+<p>Vi har arbeidet jevnt siden begynnelsen, og vært påpasselige med å skrive møtereferater og prosjektdagbok slik at det ble lettere for oss å ha
+ oversikt over hva vi faktisk driver med og hvordan vi ligger an i forhold til milepælsplanen. Det har vært mye arbeid med koding, for vi har 
+ gjort om CSS, HTML og PHP ganske ofte for å finne fram til det som passer best, og det som vi fant fram til med papirprototypen. Det var ikke
+ alltid like lett siden alle var nye i emnet og vi ikke kunne all verden.</p>
+<p><b><a name="prosjektsiden2">Design</a></b></p> <div style="text-align:right;"><a href="skisse.html">Til toppen</a></div>
+<p>Når det gjelder designet på siden vår så har vi som tidligere nevnt diskutert hvordan det skal se ut, lagd papirprototype og deretter utkast
+ til design i Photoshop.  Det har vært mye fram og tilbake da vi ikke fant noen farger vi var spesielt fornøyde med, noe som resulterte i en 
+ del omgjøring og ubesluttsomhet. Der burde vi vært flinkere til å finne fram til fargevalg fortere i stedet for og bare ta noen farger der 
+ og da. Dette ble det orden på etter hvert og vi fant til slutt farger vi var fornøyde med og som fungerte bra med siden vår. Vi ville ha en 
+ navigasjon på toppen med dropdown meny, slik at det er enkelt for de som besøker siden vår å navigere seg dit de vil. På forsiden har vi 
+ bestillingsskjema, der man kan velge hvor man vil reise, fylle inn informasjon etc. Vi har også en link man kan trykke på, på hvert reisemål 
+ slik at man kommer seg lett til bestillingssiden. </p>
+<p><b><a name="prosjektsiden3">Koding</a></b></p><div style="text-align:right;"><a href="skisse.html">Til toppen</a></div>
+<p>Nettsiden vår er basert på på HTML5, men med HTML4.01 elementer på grunn av at det er bredere støtte for de enn det er for HTML5 enda. 
+I stedet for de nye ARTICLE, SECTION, HEADER, NAV, FOOTER og ASIDE, så har vi brukt div-elementer, slik som < div id="navigation" > for å 
+strukturere dokumentene våre. Allikevel validerer siden vår som HTML5 og derfor bestemte vi oss for å beholde div-elementene, da dette er 
+noe vi er mer kjent med og som vi får til å fungere. I starten kodet vi navigasjonsdelen i PHP men dette funket ikke optimalt og vi så etter
+ hvert at det ville bli bedre om vi kodet det i CSS i stedet. For å få til det har vi brukt CSS3 elementer.</p>
+<p>PHP brukte vi til å kode bestillingsdelen av siden vår, da det var mest hensiktsmessig med tanke på at man må velge destinasjoner, skrive 
+inn informasjon om seg selv og deretter sende en e-post til oss med bestillingen man har gjort. Det er også fint å integrere andre ting vi har 
+lært dette semesteret for dette bedrer vår egen læring. </p>
+<p>Vi har også brukt PHP for å optimalisere siden vår for mobiler og iPad som en del av det å nå ut til så mange som mulig. Dette PHP - scriptet
+ er for å finne nettlesere på mobil, og er hentet fra <a href="http://detectmobilebrowsers.mobi/">http://detectmobilebrowsers.mobi/</a>.</p>
+<p>Vi har også kode for at Internet Explorer brukere skal komme på riktig side, dette er også en 'browser detect' kode. Denne koden er hentet 
+fra <a href="http://www.dreamincode.net/code/snippet4979.htm">http://www.dreamincode.net/code/snippet4979.htm</a>.</p>
+<p><b><a name="prosjektsiden4">Universell utforming</a></b></p><div style="text-align:right;"><a href="skisse.html">Til toppen</a></div>
+<p>Den nye antidiskrimineringsloven påbyr alle nye IKT-produkter som er orientert mot allmennheten, å rette seg etter de syv prinsippene for 
+universell utforming innen 2011. Etter det vil det være ulovlig å diskriminere folk med funksjonsnedsettelser. Dette har vi tatt hensyn til så
+ godt det går, og vil si vi har greid å holde oss bra innenfor de punktene som er satt i Norge og WCAG 2.0-prinsippene. Vi har designet siden 
+ slik at det ikke skal ta mer enn fire klikk for å navigere siden og finne det som man er ute etter, vi har også vært påpasselige med at det skal 
+ være lett å navigere på siden, at det er oversiktlig. Den har ingen flashy funksjoner med javascript eller flash, og det er kun bilder og tekst 
+ på siden. Vi har også god kontrast mellom tekst og bakgrunn slik at det skal være lett å lese, og at vi ikke har for mye tekst, men det er 
+ hovedsaklig kortfattet og hensiktsmessig skrevet. Fokus har også vært på at siden skal være semantisk riktig strukturert, med korrekte tags.
+ Vi har passet på å inkludere tekst-alternativer til alle bilder.</p>
+ <br/>
+<h3 style="text-align:center;"><a name="dok">Dokumenter</h3><div style="text-align:right;"><a href="skisse.html">Til toppen</a></div></p>
+<p><b><a name="dok1">Styringsdokumenter</a></b></p>
+<p>Styringsdokumentene begynte vi å skrive nesten helt fra første stund. Vi følte det var viktig å ha noe litt mer håndfast å jobbe etter enn 
+kun oppgaveteksten vi fikk utlevert. Det første vi startet med var naturligvis prosjektbeskrivelsen. Denne inneholdt prosjektets problemstilling,
+ målformuleringer, formål og tema. Prosjektbeskrivelsen har på en måte vært vår egen oppgavetekst til oppgaven vi ga oss selv. Denne har vært 
+ bakgrunnen for alt vi har gjort, og har vært grei å se på om vi har stått fast på noe tidspunkt. </p>
+<p>Samarbeidsavtalen vår utarbeidet vi relativt fort. Det var ganske selvsagt hva som skulle være inkludert i den. Vi måtte ha bra frammøte 
+på gruppemøtene, ellers ville både produktiviteten og kommunikasjonen i gruppa være dårlig, så vi krevde at vi måtte møte opp og møte presise
+ og opplagte til de avtalte møtene. Alle medlemmene er ellers oppegående mennesker så vi skjønte godt selv hva som var dårlig stil og hva som 
+ kreves for å få et sånt gruppearbeid til å fungere. Dette har ført til at vi sjeldent til aldri har trengt å se på samarbeidsavtalen i etterkant,
+ for alle har jobbet bra og hatt et godt oppmøte gjennom hele perioden. </p>
+<p>Når det gjelder arbeidsplan og milepælsplan så ble de begge skrevet tidlig i perioden. I tiden de ble skrevet, visste vi ikke så mye om de 
+forskjellige leveransene og hva de inneholdt, så det ble litt tipping på de forskjellige datoene. Vi har da naturligvis falt litt utenfor datoene 
+vi skrev der, men vi har hovedsakelig ligget foran skjema. </p>
+<p>Da vi startet, oppdaterte vi disse dokumentene ettersom vi nærmet oss datoene, men etter hvert som det ble mer å gjøre, prioriterte vi 
+vekk det og holdt på de planene vi skrev i begynnelsen. Nå og da endret vi på noen dokumenter, men i hovedsak er de nokså like det de var
+ i starten. Unntaket er selvfølgelig prosjektdagboken og møtereferatene, som har blitt oppdaterte etter hvert gruppemøte i hele høst. </p>
+<p><b><a name="dok2">Midtveisrapport</a></b></p><div style="text-align:right;"><a href="skisse.html">Til toppen</a></div>
+<p>Midtveisrapporten skulle inneholde en skisse av det ferdige nettstedet, med et nettstedkart. Vi laget nettstedkartet i noe så enkelt som Paint, 
+mens designutkastet ble laget i Adobe Photoshop. Designutkastet ble faktisk laget etter at vi var på god vei mot å bli ferdige med selve 
+prosjektsiden, så den er nesten identisk med hvordan siden så ut da. </p>
+<p>Den krevde også en evaluering av hvordan prosjektperioden hadde gått til da, begrunnelse for designvalg og krav til siden.</p> 
+<p>Designvalgene våre gikk ut ifra at brukeren var over 16 år og interessert i en aktiv ferietur. Vi ble enige om at siden skulle være 
+relativt enkel, men fortsatt være elegant og solid slik at den vekker tillit fra brukeren. </p>
+<p>Kravene til siden var forskjellige teknologiske krav og standarder som siden skulle følge, hva slags funksjonalitet siden hadde og hvordan 
+vi skulle sikre brukervennlighet. Dette kommer vi tilbake til i konklusjonen vår til slutt i rapporten. </p>
+<p>Arbeidsmetoden for både styringsdokumentene og midtveisrapporten har vel egentlig vært slik at disse dokumentene har i all hovedsak 
+blitt skrevet av én person. Vi har alle vært med på å utforme de, men så har ansvaret for å skrive de ned falt på ett medlem. Det har vel 
+fungert helt greit, men det hadde kanskje vært mer optimalt om vi hadde delt enda mer på det, slik at alle kunne fått prøvd seg i større grad
+ på alle aspektene i gruppearbeidet. Det er vel litt utopi, og mer aktuelt i teorien enn i praksis, og dette gjelder vel egentlig alle 
+ arbeidsoppgavene, men det er fryktelig vanskelig å dele på alt slik at alle får gjort alt. Da blir arbeidet fort oppstykket og lite produktivt. 
+ I tillegg så er det jo litt forskjell på kompetansen i gruppa, og det er jo bare dumt å ikke anvende seg av det, at de som er flinke i noe tar 
+ seg av det, mens de som kan mye av noe annet er ansvarlige for det området. </p>
+<br/>
+
+<h3 style="text-align:center;"><a name="konkl">Konklusjon</h3><div style="text-align:right;"><a href="skisse.html">Til toppen</a></div></p>
+<p>Denne sluttrapporten har jo på en måte vært en slags konklusjon av hvordan hele prosessen har vært, så vi skal nå oppsummere noe av dette. </p>
+<p>Siden skulle være elegant og ha et solid og fint design. Dette føler vi at vi har fått til bra, og alle vi har spurt har sagt at siden er 
+behagelig å se på. Den skulle også være tillitvekkende, siden folk tross alt skal bestille en tjeneste fra den. Dette er vel i mindre grad oppfylt,
+ mener vi. Den er kanskje litt enkel og har litt lite alternativer for at kunder virkelig skal stole på at tjenesten blir utført, og dette er vi 
+ klare over. Vi har flere ganger spøkt med at vi nok ikke hadde bestilt en tur fra siden vår! På den annen side er nok vår side enklere å bruke 
+ og forstå for folk med funksjonsnedsettelser enn mange av sidene til reiseoperatørene.</p>
+<p>Alt i alt er vi fornøyde med hvordan dette prosjektet har gått. Vi var alle innstilte på å jobbe en rimelig mengde timer i uka, vi hadde "meldt"
+ oss på den gruppeinndelinga som skulle jobbe 5-10 timer i uka. I gjennomsnitt tror vi dette har stemt ganske greit - i starten lå vi nok der, midt
+ i perioden gikk vi nok over 10, og mot slutten har det nok dabbet av litt, der eksamenslesing mot andre emner har tatt over litt. Gruppemøtene har
+ vi hatt ca 2 ganger i uka gjennom hele perioden, noe som har fungert meget bra. Det har vært veldig bra oppmøte i gruppa, og alle har møtt opp 
+ hver gang, såfremt de har hatt muligheten. </p>
+<p>Det er i hovedsak på gruppemøtene vi har gjort arbeidet. Vi har møtt opp, snakket litt om hva vi har tenkt til å gjøre den dagen og gått i 
+gang med det. Gjennom dagen har vi selvsagt kommunisert med hverandre og fått og gitt råd, før vi pusher opp det på GIT og legger det opp på 
+serveren til HIO på slutten av dagen. Dette har vært en fin løsning for oss, og vi har vært såpass effektive når vi har hatt gruppemøter, at 
+vi ikke har hatt noe særlig behov for å jobbe med prosjektet på egenhånd, selv om det selvfølgelig har vært litt av det også. Gruppesiden har
+ vært til stor hjelp gjennom perioden. Den har til enhver tid inneholdt alle styringsdokumentene, inkludert mål/problemstillinger, så det har
+ vært greit å se gjennom den siden for litt inspirasjon når man har slitt litt. Vi har også oppdatert den etter hvert møte, med hva vi har gjort
+ den økta og når neste møte skal være. </p>
+<p>Humøret og forholdet mellom medlemmene i gruppa har vært utmerket. Vi har alle kommet veldig godt overens og det har vært en særdeles løssluppen
+ stemning. Dette har kanskje ført til at vi har tulla litt mye til tider, men vi mener dette bare er positivt, siden da er det gøy å være på møte,
+ som gjør oss motiverte til å møte opp og gjøre en jobb. Det gode forholdet vi har hatt, har gjort at det har vært lett for medlemmene å komme 
+ med forslag til endringer uten at man har behøvd å være redd for at noen skal bli støtt. </p>
+<br/>
+<h3 style="text-align:center;"><a name="kilder">Kilder</h3><div style="text-align:right;"><a href="skisse.html">Til toppen</a></div></p>
+<p>Gjennom prosjektperioden har vi hentet informasjon og inspirasjon fra et antall eksterne kilder. Det er i hovedsak sider som er 
+ment i utdannings-øyemed eller til offentlig bruk, som wikipedia og lignende. Noen bilder har vi imidlertid hentet fra private sider,
+ og der har vi sendt e-mail og fått tillatelse til å benytte bildene. </p>
+<p>Her følger en liste av kilder vi har brukt:</p>
+<ul>
+<li class="innhold"><a href="http://www.lofoten-rorbuferie.no/">http://www.lofoten-rorbuferie.no/</a> - Bilder fra Lofotfiske</li>
+<li class="innhold"><a href="http://www.lofoten-startside.no/fiske.htm">http://www.lofoten-startside.no/fiske.htm</a> - Informasjon om Lofotfiske</li>
+<li class="innhold"><a href="http://no.wikipedia.org/">http://no.wikipedia.org/</a> - Bilder og informasjon om diverse reisemål og aktiviteter</li>
+<li class="innhold"><a href="http://www.wikipedia.com">http://www.wikipedia.com</a> - Bilder og informasjon om diverse reisemål og aktiviteter</li>
+<li class="innhold"><a href="http://www.x-plore.no">http://www.x-plore.no</a> - Informasjon om surfing i Australia</li>
+<li class="innhold"><a href="http://www.catch-em-all.com">http://www.catch-em-all.com</a> - Bilder og informasjon om fisking i Florida</li>
+<li class="innhold"><a href="http://www.fishing-florida.com">http://www.fishing-florida.com</a> - Informasjon om fisking i Florida</li>
+<li class="innhold"><a href="http://www.angling-adventures.com.au">http://www.angling-adventures.com.au</a> - Bilder og informasjon om fisking i Australia</li>
+<li class="innhold"><a href="http://upload.wikimedia.org/wikipedia/commons/">http://upload.wikimedia.org/wikipedia/commons/</a> - Bilder om diverse</li>
+<li class="innhold"><a href="http://www.dolomitisuperski.com/en-US/ski-holidays-11EN.html">http://www.dolomitisuperski.com/en-US/ski-holidays-11EN.html</a> - Informasjon om skiferie i Italia</li>
+<li class="innhold"><a href="http://www.aftenposten.no/reise/article1536740.ece">http://www.aftenposten.no/reise/article1536740.ece</a> - Informasjon om skiferie i Italia</li>
+<li class="innhold"><a href="http://www.skiinfo.no/Land/Sveits-ECH-9671-no.jhtml">http://www.skiinfo.no/Land/Sveits-ECH-9671-no.jhtml</a> - Informasjon om skiferie i Sveits</li>
+<li class="innhold"><a href="http://www.forbes.com/2001/11/08/1108feat_5.html">http://www.forbes.com/2001/11/08/1108feat_5.html</a> - Informasjon om skiferie i USA</li>
+<li class="innhold"><a href="http://www.deervalley.com/">http://www.deervalley.com/</a> - Informasjon om skiferie i USA</li>
+<li class="innhold"><a href="http://www.steinlodge.com/lodge">http://www.steinlodge.com/lodge</a> - Informasjon om skiferie i USA</li>
+<li class="innhold"><a href="http://www.breckenridge.com/">http://www.breckenridge.com/</a> - Informasjon om skiferie i USA</li>
+<li class="innhold"><a href="http://www.anchorage.net/772.cfm">http://www.anchorage.net/772.cfm</a> - Informasjon om skiferie i USA</li>
+<li class="innhold"><a href="http://www.alyeskaresort.com/">http://www.alyeskaresort.com/</a> - Informasjon om skiferie i USA</li>
+<li class="innhold"><a href="http://observer.guardian.co.uk/">http://observer.guardian.co.uk/</a> - Informasjon om fotball i Argentina</li>
+<li class="innhold"><a href="http://www.youtube.com/watch?v=yz8dZsmLHQo">http://www.youtube.com/watch?v=yz8dZsmLHQo</a> - Tutorial i CSS-dropdown meny</li>
+<li class="innhold"><a href="http://detectmobilebrowsers.mobi/">http://detectmobilebrowsers.mobi/</a> - Kildekode for å finne ut om kunden bruker mobiltelefon</li>
+<li class="innhold"><a href="http://www.dreamincode.net/code/snippet4979.htm">http://www.dreamincode.net/code/snippet4979.htm</a> - Kildekode for å finne ut om kunden bruker Internet Explorer</li>
+<li class="innhold"><a href="http://www.w3.org/TR/WCAG20/">http://www.w3.org/TR/WCAG20/</a> - Anbefalte rettelinjer for universell utforming</li>
+<li class="innhold"><a href="http://www.ving.no/">http://www.ving.no/</a>,<a href="http://www.apollo.no/">http://www.apollo.no/</a> - Inspirasjon fra anerkjente reisesider</li>
+<li class="innhold">Andersen, Erling S. og Schwencke, Eva: Prosjektarbeid - en veiledning for studenter. 3. utgave. NKI Forlaget, Bekkestua 2010</li>
+</ul>
+
+
+
 
 <div class="footer">
 	<hr/>
